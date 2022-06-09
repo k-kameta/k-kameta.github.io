@@ -15,8 +15,9 @@ img {
 
 html,
 body {
-  font-family: Arial, sans-serif;
-  margin: 8px;
+  /* font-family: Arial, sans-serif; */
+  font-family: 'Source Serif Pro', serif;
+    margin: 8px;
 }
 
 p {
