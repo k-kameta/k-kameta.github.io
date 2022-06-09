@@ -37,7 +37,8 @@ span {
   color: #888;
 }
 
-a:-webkit-any-link {
+/* a:-webkit-any-link { */
+a {
   color: blue;
   cursor: pointer;
   text-decoration: underline;
