@@ -49,8 +49,11 @@ a {
   text-decoration: underline;
 }
 
+#year {
+  color: whitesmoke;
+}
+
 #lastmod {
-  color: black;
   color: whitesmoke;
   font-size: smaller;
 }
