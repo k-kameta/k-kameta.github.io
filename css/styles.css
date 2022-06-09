@@ -1,0 +1,62 @@
+img {
+  max-width: 90%;
+}
+
+.card {
+  width: 70%;
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 6px;
+  /* background-color: #1a83b3; */
+  background-color: #795548;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+  margin: 8px;
+}
+
+p {
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+}
+p {
+  text-align: right;
+  /* padding-right: 100px; */
+  padding-right: 33%;
+}
+}
+
+span {
+  text-align: right;
+  padding: 8px;
+  color: #888;
+}
+
+a:-webkit-any-link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#footer_link {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#lastmod {
+  color: whitesmoke;
+  font-size: smaller;
+}
+
+/* footer {
+  display: grid;
+  grid-template-columns: 50px 50px auto;
+  grid-template-rows: 2.3em;
+  padding: 1.2em 1.4em 1em 1em;
+}
+*/
