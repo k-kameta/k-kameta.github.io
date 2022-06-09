@@ -3,7 +3,7 @@ img {
 }
 
 .card {
-  width: 70%;
+  width: 90%;
   box-shadow: 1px 1px 4px 1px #888;
   border-radius: 6px;
   /* background-color: #1a83b3; */
@@ -17,8 +17,13 @@ html,
 body {
   /* font-family: Arial, sans-serif; */
   font-family: 'Source Serif Pro', serif;
-    margin: 8px;
+  margin-top: 8px;
+  margin-right: auto;
+  margin-bottom: 8px;
+  margin-left: 10px;
 }
+}
+
 
 p {
   padding-left: 0.9em;
@@ -27,7 +32,7 @@ p {
 p {
   text-align: right;
   /* padding-right: 100px; */
-  padding-right: 33%;
+  padding-right: 20%;
 }
 
 span {
