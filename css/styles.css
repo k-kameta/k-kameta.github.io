@@ -1,12 +1,12 @@
 img {
   max-width: 90%;
+  float: right;
 }
 
 .card {
   width: 90%;
   box-shadow: 1px 1px 4px 1px #888;
   border-radius: 6px;
-  /* background-color: #1a83b3; */
   background-color: #795548;
   text-align: center;
   color: white;
@@ -20,7 +20,7 @@ body {
   margin-top: 8px;
   margin-right: auto;
   margin-bottom: 8px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 p {
@@ -30,7 +30,7 @@ p {
 p {
   text-align: right;
   /* padding-right: 100px; */
-  padding-right: 20%;
+  padding-right: 11%;
 }
 
 span {
@@ -39,7 +39,7 @@ span {
   color: #888;
 }
 
-/* a:-webkit-any-link { */
+/* a:-webkit-any-link {} */
 a {
   color: blue;
   cursor: pointer;
@@ -60,6 +60,23 @@ a {
   color: whitesmoke;
   font-size: smaller;
 }
+
+/*
+#box1 {
+  float: left;
+}
+
+#box2 {
+  float: right;
+}
+
+#box3 {
+  clear: left;
+}
+#box4 {
+  clear: left;
+}
+*/
 
 /* footer {
   display: grid;
