@@ -1,4 +1,4 @@
-img {
+#profile_img {
   max-width: 90%;
   float: right;
 }
@@ -6,7 +6,7 @@ img {
 .card {
   width: 90%;
   box-shadow: 1px 1px 4px 1px #888;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: #795548;
   text-align: center;
   color: white;
@@ -39,7 +39,6 @@ span {
   color: #888;
 }
 
-/* a:-webkit-any-link {} */
 a {
   color: blue;
   cursor: pointer;
@@ -60,28 +59,3 @@ a {
   color: whitesmoke;
   font-size: smaller;
 }
-
-/*
-#box1 {
-  float: left;
-}
-
-#box2 {
-  float: right;
-}
-
-#box3 {
-  clear: left;
-}
-#box4 {
-  clear: left;
-}
-*/
-
-/* footer {
-  display: grid;
-  grid-template-columns: 50px 50px auto;
-  grid-template-rows: 2.3em;
-  padding: 1.2em 1.4em 1em 1em;
-}
-*/
