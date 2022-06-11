@@ -9,36 +9,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
 
-    <script defer src="js/dates.js"></script>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="css/styles-w01b.css"> <!-- Additional css for W02(2) assignment -->
+    <link rel="stylesheet" href="./css/small.css">   <!-- Thanks to Prince C. Chukwu for his design and CSS -->
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
   </head>
 
   <body>
     <header>
       <div class="logo-box"><!-- logo will go here --></div>
-      <div class="card">
+      <div>
         <h1>Design Principles Document</h1>
-        <h2>WD 230 - W01</h2>
+        <h2>WD 230 - W01(2)</h2><br>
+        <a href="index.html">Return to my assignment list</a></li>
       </div>
     </header>
 
     <main>
-      <div>
-      </div>
-      <h2>Design Principles Document・・・・・<br/></h2>
-      <hr />
-      <nav>
-        <li>Lesson 01: <a href="index.html">Course Assignment Portal</a></li>
-      </nav>
-      <hr />
+      <br>
+      <div class="sections">
+        <section>
+            <div class="subhead">
+                <h3>Hick's Law</h3><br><hr>
+                <h4>Delta airline - booking site</h4>
+                <a class="blue_link" href="https://www.delta.com/jp/en" target="_blank">https://www.delta.com/jp/en</a>
+            </div>
+            <picture class="Pic2"><img src="./assets/W01b-Screenshot_2.png"
+                    alt="Delta homepage image"></picture>
+            <p>Anybody can easily use this site without instruction because it focuses on the functionality of how to search for the appropriate flights and book the selected one. The functions on this main page are well chosen for the purpose. This design helps users to input the necessary information easily and quickly. This is an example of the application of Hick's Law.
+          </p>
+        </section>
+        <section>
+            <div class="subhead">
+                <h3>Fitt's Law</h3><br><hr>
+                <h4>Instagram</h4>
+                <a class="blue_link" href="https://www.instagram.com/" target="_blank">https://www.instagram.com/</a>
+            </div>
+            <picture class="Pic3"><img src="./assets/W01b-Screenshot_3.png"
+                    alt="Instagram homepage image">
+            </picture>
+            <p>Most of the main navigation buttons are located at the bottom of the mobile page, and users can use the site with almost one finger keeping the device in their palm. Also on the top, we can see relatively large circle buttons to reach Reel materials. This accessibility of the menu items is one of the examples of Fitt's Law where the distance and size are key parameters to evaluate the accessibility.
+            </p>
+        </section>
+        <section>
+            <div class="subhead">
+                <h3>White Space and Clean Design</h3><hr>
+                <h4>Apple</h4>
+                  <a class="blue_link" href="https://www.apple.com/jp/" target="_blank">https://www.apple.com/jp/</a>
+            </div>
+                <picture class="Pic1"><img src="./assets/W01b-Screenshot_1.png" alt="Apple homepage image">
+                </picture>
+                <p>Apple site uses plenty of white spaces which is consistent with the company's image color and its design simplicity. These are what people expect from the company, i.e., a simple and easy user interface with an elegant handling feel. Users, then, can focus on the limitted and sellected items on the screen.
+                </p>
+        </section>
+        </div>
     </main>
 
-
     <footer>
-        <div class="card">&copy; <span id="year"></span> | Kosei Kameta | Tokyo | <a id="footer_link" href="https://www.byui.edu/online">BYU Online Learning</a> 
+        <div>&copy; <span id="year"></span> | Kosei Kameta | Tokyo | <a id="footer_link" href="https://www.byui.edu/online">BYU Online Learning</a> 
         <div id="lastmod"> </div></div>
     </footer>
+    <script defer src="js/dates.js"></script>
   </body>
 </html>
