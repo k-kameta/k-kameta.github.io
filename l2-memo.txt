@@ -1,0 +1,30 @@
+
+weatherspotreport.com
+
+https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon
+
+
+"target-audience.html"—a page focusing on the target audience for the site which includes:
+A description of the target audience
+Two personas
+At least five listed scenarios
+
+
+"color-scheme.html"—reference the elements/content to which the colors will apply. 
+This means that you need to provide examples and actual values as demonstrated in the reading.
+
+
+
+"typography.html"—reference the elements/content to which the typography choices will apply. 
+Be sure to provide examples.
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+CSS rules to specify families
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Serif Pro', serif;
