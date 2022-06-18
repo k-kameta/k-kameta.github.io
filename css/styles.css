@@ -9,7 +9,7 @@
 }
 
 header {
-  width: 90%;
+  width: 93%;
   box-shadow: 1px 1px 4px 1px #888;
   background-color: #795548;
   color: white;
@@ -20,7 +20,7 @@ header {
 }
 
 footer {
-  width: 90%;
+  width: 93%;
   box-shadow: 1px 1px 4px 1px #888;
   background-color: #795548;
   color: white;
@@ -37,7 +37,8 @@ body {
   margin-top: 8px;
   margin-right: auto;
   margin-bottom: 8px;
-  margin-left: 12px;
+  /* margin-left: 12px; */
+  margin-left: 2.5%;
 }
 
 p {
