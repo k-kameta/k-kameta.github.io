@@ -2,7 +2,8 @@
 nav {
 	margin: 0 auto;
 	/* max-width: 760px; */
-	max-width: 95%;
+    max-width: 100%;
+	/* max-width: 95%; */
 	background-color: tomato;
     box-shadow: 1px 1px 4px 1px #888;
 }

@@ -1,7 +1,8 @@
 main.content {
   /* margin-left: 3%; */
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 100%;
+  /* max-width: 95%; */
 }
 
 h2 {
@@ -51,7 +52,8 @@ margin-top: 0px;
 
 header {
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 100%;
+  /* max-width: 95%; */
   /* max-width: 760px; */
   /* width: 90%; */
   box-shadow: 1px 1px 4px 1px #888;
@@ -69,7 +71,8 @@ header {
 
 footer {
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 100%;
+  /* max-width: 95%; */
   /* max-width: 760px; */
   /* width: 90%; */
   box-shadow: 1px 1px 4px 1px #888;
