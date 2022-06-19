@@ -60,11 +60,11 @@ header {
   box-shadow: 1px 1px 4px 1px #888;
   background-color: #795548;
   color: white;
-  /* border-radius: 8px; */
-  border-top-left-radius: 8px;
+  border-radius: 0px;
+  /* border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px; */
   text-align: center;
   padding: 0.1em; 
   /* font-size: x-large; */
@@ -79,11 +79,11 @@ footer {
   box-shadow: 1px 1px 4px 1px #888;
   background-color: #795548;
   color: white;
-  /* border-radius: 8px; */
-  border-top-left-radius: 0px;
+  border-radius: 0px;
+  /* border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px; */
   align-items: center;
   text-align: center;
   padding: 0.3em;
