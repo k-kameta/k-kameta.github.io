@@ -1,6 +1,8 @@
 /* Small/Phone View ***************/
 nav {
-	margin: 0 auto;
+	/* margin: 0 auto; */
+	margin-right: 5px;
+	margin-left: 5px;
 	/* max-width: 760px; */
     max-width: 100%;
 	/* max-width: 95%; */

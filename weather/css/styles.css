@@ -1,8 +1,9 @@
 main.content {
   /* margin-left: 3%; */
-  margin: 0 auto;
-  max-width: 100%;
-  /* max-width: 95%; */
+  /* margin: 0 auto; */
+  margin: 8px;
+  /* max-width: 100%; */
+  max-width: 980px;
 }
 
 h2 {
@@ -12,7 +13,9 @@ h2 {
 
 
 ul.navigation {
-margin-top: 0px;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 #focus {
@@ -36,7 +39,9 @@ margin-top: 0px;
 }
 
 header {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-right: 5px;
+  margin-left: 5px;
   max-width: 100%;
   /* max-width: 95%; */
   /* max-width: 760px; */
@@ -55,7 +60,9 @@ header {
 }
 
 footer {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-right: 5px;
+  margin-left: 5px;
   max-width: 100%;
   /* max-width: 95%; */
   /* max-width: 760px; */
@@ -78,13 +85,12 @@ footer {
 html,
 body {
   /* font-family: Arial, sans-serif; */
+  
   font-family: 'Source Serif Pro', serif;
   margin-top: 8px;
   margin-bottom: 8px;
-  /* margin-right: auto; */
-  margin-right: 8px;
-  margin-left: 8px;
-  margin-left: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 p {
@@ -147,18 +153,14 @@ a {
 }
 
 .contentbox-article {
+  display: block;
+	position: relative;
   font-style: normal;
-  /* margin: 0 auto; */
-  /* max-width: 95%; */
-  /* max-width: 760px; */
-  /* width: 90%; */
   background-color: #E7DFC6;
-  /* border: 1px dashed #000; */
   color: black ;
   margin-top: 5px;
   margin-bottom: 10px;
   margin-right: 0%;
-  /* border-radius: 8px; */
   text-align:center;
   padding: 0.1em;
 }
@@ -295,31 +297,7 @@ a {
 
 
 
-@media screen and (max-width: 700px){
- 
-    #address {
-      /* display: flex;  */
-        grid-column: 1;
-        font-style: normal;
-        font-size: 1rem;
-        text-align: left;
-        justify-content: left;
-        margin-top: 15px;
-        margin-bottom: 30px;
-      }
-  
-    #img-article {
-      max-width: 40%;
-      float: right;
-      margin-bottom: 20px;
-      margin-right: 20px;
-    }
-    }
-    
-
-  }
-
-  @media screen and (max-width: 480px){
+@media screen and (max-width: 480px){
 	.stats-weather {
 		position: relative;
 		top: 0px;
@@ -354,3 +332,32 @@ a {
   }
 
 }
+
+
+@media screen and (max-width: 700px){
+ 
+    #address {
+      /* display: flex;  */
+        grid-column: 1;
+        font-style: normal;
+        font-size: 1rem;
+        text-align: left;
+        justify-content: left;
+        margin-top: 15px;
+        margin-bottom: 30px;
+      }
+  
+    #img-article {
+      max-width: 40%;
+      float: right;
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+ 
+
+}
+
