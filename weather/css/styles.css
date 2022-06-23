@@ -38,6 +38,21 @@ ul.navigation {
   float: left;
 }
 
+
+.display-message{
+  background-color: yellow;
+  margin-right: 5px;
+  margin-left: 5px;
+  max-width: 100%;
+  /* box-shadow: 1px 1px 4px 1px #888; */
+  color: black;
+  border-radius: 0px;
+  text-align: center;
+  padding: 0.1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 header {
   /* margin: 0 auto; */
   margin-right: 5px;
@@ -249,7 +264,7 @@ a {
 	/* display: block; */
 	position: absolute;
 	/* position: relative; */
-	top: 265px;
+	top: 275px;
 	left: 30px;
   
   /* height: 13rem; 
@@ -270,16 +285,13 @@ a {
   color: yellow;
 }
 
-span.stats-weather {
-  color: yellow;
-}
-
->Partly_cloudy</span></p>
+/* span.stats-weather {
+  color: yellow; >Partly_cloudy</p>
 <p class="stats-weather2">High: <span id="temp"> 50°F</span></p>
 <p class="stats-weather2">Wind Chill: <span id="windChill"> °F</span></p>
 <p class="stats-weather2">Humidity: <span id="humidity">62 %</span></p>
 <p class="stats-weather2">Wind Speed: <span id="windSpeed"> 4 mps</span></p>
-
+} */
 
 
 .stats-weather span {
