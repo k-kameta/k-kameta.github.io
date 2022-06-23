@@ -135,7 +135,55 @@ a {
   color: whitesmoke;
 }
 
-#lastmod {
+#lastmod, #currentdate {
   color: whitesmoke;
   font-size: smaller;
+}
+
+
+.contactbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  /* height: 350px;
+  width: 100%;
+  top: -14rem; */
+  grid-gap: 0.5rem;
+
+  font-style: italic;
+  background-color: #E7DFC6;
+  border: 1px dashed #000;
+  color: black ;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+  /* border-radius: 8px; */
+  text-align: left;
+  padding: 0.1em; 
+}
+
+
+#footer_map {
+  display: flex;
+  grid-column: 1;
+  max-width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 5px;
+  /* width: 350px;
+  height: 300px; */
+  align-items: center;
+  justify-content: center;
+}
+
+#address {
+/* display: flex;  */
+  grid-column: 2;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: left;
+  justify-content: left;
+  margin-top: 15px;
+}
 }

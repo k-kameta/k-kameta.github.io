@@ -6,3 +6,5 @@ document.querySelector("#year").textContent = currentDate.getFullYear();
 const lastmod = document.querySelector('#lastmod');
 lastmod.innerHTML = `Last updated: ${document.lastModified}`;
 
+const today = document.querySelector('#currentdate');
+today.innerHTML = `Current date: ${currentDate}`;
