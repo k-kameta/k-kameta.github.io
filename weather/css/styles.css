@@ -290,3 +290,16 @@ a {
   text-align: center;
   font-size: medium;
 }
+
+
+.img-weather {
+  width: 60%;
+ }
+
+.img-weather2 {
+  width: 75%;
+ }
+
+ #img-hello {
+  width: 100%;
+}
