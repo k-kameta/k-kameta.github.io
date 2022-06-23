@@ -256,6 +256,7 @@ a {
   text-align: left;
   justify-content: left;
   margin-top: 15px;
+  margin-left: 30px;
 }
 
 
@@ -280,24 +281,14 @@ a {
   /* opacity: 0.9; */
 } 
 
-
-#cover #temp #windChill #humidity #windSpeed {
-  color: yellow;
-}
-
-/* span.stats-weather {
-  color: yellow; >Partly_cloudy</p>
-<p class="stats-weather2">High: <span id="temp"> 50°F</span></p>
-<p class="stats-weather2">Wind Chill: <span id="windChill"> °F</span></p>
-<p class="stats-weather2">Humidity: <span id="humidity">62 %</span></p>
-<p class="stats-weather2">Wind Speed: <span id="windSpeed"> 4 mps</span></p>
+/* #cover #temp #windChill #humidity #windSpeed {
+  color: red;
 } */
-
 
 .stats-weather span {
 	font-style: italic;
 	font-weight: 500;
-  color: black;
+  color: tomato;
 }
 
 

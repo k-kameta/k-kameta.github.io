@@ -52,7 +52,7 @@ nav {
 }
 
 .responsive a.ham::before {
-	content: "❌ ";
+	content: "❌ Close ";
 }
 
 /* Media Query for medium+ views */
