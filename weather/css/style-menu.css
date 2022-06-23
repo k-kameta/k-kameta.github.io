@@ -9,6 +9,11 @@ nav {
 	background-color: tomato;
     box-shadow: 1px 1px 4px 1px #888;
 }
+#current_page {
+	background-color:#6a8ac9;
+	;
+}
+
 .navigation {
 	list-style: none;
 	padding: 0;
