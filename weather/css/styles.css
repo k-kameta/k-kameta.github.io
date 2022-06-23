@@ -159,7 +159,7 @@ a {
   margin-bottom: 10px;
   margin-right: 0%;
   /* border-radius: 8px; */
-  text-align: left;
+  text-align:center;
   padding: 0.1em;
 }
 
@@ -252,25 +252,6 @@ a {
 }
 
 
-@media screen and (max-width: 480px){
-	.stats-weather {
-		position: relative;
-		top: 0px;
-		left: 0px;
-    opacity: 1;
-    box-shadow: 0 0 0px #333;
-    border: 0px solid #000;
-    margin-bottom: 12px;
-
-  }
-
-	img{
-		opacity: 1;
-		max-width: 100%;
-	}
-}
-
-
 .flex-5days {
 	display: flex;
   flex-flow: row wrap;
@@ -302,4 +283,50 @@ a {
 
  #img-hello {
   width: 100%;
+}
+
+
+@media screen and (max-width: 480px){
+	.stats-weather {
+		position: relative;
+		top: 0px;
+		left: 0px;
+    opacity: 1;
+    box-shadow: 0 0 0px #333;
+    border: 0px solid #000;
+    margin-bottom: 0px;
+  }
+
+
+	img-hello {
+		opacity: 1;
+		max-width: 100%;
+	}
+
+ 
+  #address {
+  /* display: flex;  */
+    grid-column: 1;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: left;
+    justify-content: left;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 700px){
+ 
+  #address {
+    /* display: flex;  */
+      grid-column: 1;
+      font-style: normal;
+      font-size: 1rem;
+      text-align: left;
+      justify-content: left;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
 }
