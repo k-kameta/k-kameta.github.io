@@ -245,17 +245,26 @@ a {
 
 
 .stats-weather {
-  /* max-width: 40%; */
+  /* max-width: 40%; 不要 */
+	/* display: block; */
 	position: absolute;
+	/* position: relative; */
 	top: 265px;
 	left: 30px;
+  
+  /* height: 13rem; 
+	width: 14rem;
+	top: -45vh;
+	left: 1rem; */
+
 	background: radial-gradient(#eee, #6a8ac9);
 	border: 1px solid #000;
 	padding: 0.5rem;
 	box-shadow: 0 0 20px #333;
 	/* opacity: 0.9; */
-  opacity: 0.9;
-}
+  /* opacity: 0.9; */
+} 
+
 
 #cover #temp #windChill #humidity #windSpeed {
   color: yellow;
