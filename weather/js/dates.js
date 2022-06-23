@@ -10,7 +10,7 @@ const today = document.querySelector('#currentdate');
 today.innerHTML = `Current date: ${currentDate}`;
 
 function Settoday(){
-    const currentDate = new Date() ;
+    var today = new Date() ;
     var weekday = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] ;  
     document.getElementById(weekday[today.getDay()]).style.display="block";
 }
