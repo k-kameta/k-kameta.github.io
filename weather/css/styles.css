@@ -84,9 +84,9 @@ footer {
 
 html,
 body {
+  max-width: 980px;
   /* font-family: Arial, sans-serif; */
-  
-  font-family: 'Source Serif Pro', serif;
+    font-family: 'Source Serif Pro', serif;
   margin-top: 8px;
   margin-bottom: 8px;
   margin-right: 5px;
