@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-
+<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 
 <!-- STYLE SHEETS -->
 <link href="css/normalize.css" rel="stylesheet">
@@ -31,6 +31,7 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/style-menu.css">
+<link rel="stylesheet" href="css/style-sns.css">
 
      
 </head>
@@ -63,14 +64,40 @@
 <!-- CONTENT HERE -->
     <main class = "content">
         <h2>Preston Idaho</h2>
-        <div class="contentbox">
+        <div class="contentbox-1">
             <h3>Hero w/ weather summary</h3>
+    		<picture>
+                <img src="images/dreamstimesmall_230695363.jpg" alt="preston image">
+            </picture>
+                  <section class="stats-weather">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <p class="stats-weather2">Currently: <span id="cover">Partly_cloudy</span></p>
+                    <p class="stats-weather2">High: <span id="temp"> 50°F</span></p>
+                    <p class="stats-weather2">Wind Chill: <span id="windChill"> °F</span></p>
+                    <p class="stats-weather2">Humidity: <span id="humidity">62 %</span></p>
+                    <p class="stats-weather2">Wind Speed: <span id="windSpeed"> 4 mps</span></p>
+                  </section>
+
+
+                </div>
+              </div>
+        
+
+
         </div>
         <div class="contentbox">
             <h3>5 Day forecast</h3>
         </div>
         <div class="contentbox">
             <h3>Article</h3>
+
+
+            <p>
+
+
+            </p>
+
         </div>
    
 
@@ -85,10 +112,21 @@
             <div id="address">
             <p>
                 <h3>Weather Spot Reporter</h3>
-                address:<br>
-                phone:<br>
-                email:
+                Address:30N 1st E<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Preston ID 83263<br>
+                phone: *** *** ****<br>
+                email: weather_spot_rept@abc.com
             </p>
+
+            
+            <ul class="fas_sns_iconcolor">
+                <li><a href="https://twitter.com/intent/tweet?text={*********}&url={#}" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://www.facebook.com/share.php?u={#}" target="_blank" rel="nofollow"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="http://line.me/R/msg/text/?{#}" target="_blank" rel="nofollow"><i class="fab fa-line"></i></a></li>
+            </ul>
+
             </div>
         </div>
 

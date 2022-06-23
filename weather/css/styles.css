@@ -94,9 +94,10 @@ body {
   /* font-family: Arial, sans-serif; */
   font-family: 'Source Serif Pro', serif;
   margin-top: 8px;
-  margin-right: auto;
   margin-bottom: 8px;
-  /* margin-left: 12px; */
+  /* margin-right: auto; */
+  margin-right: 8px;
+  margin-left: 8px; */
   margin-left: 0px;
 }
 
@@ -186,4 +187,42 @@ a {
   justify-content: left;
   margin-top: 15px;
 }
+
+
+.stats-weather {
+  /* max-width: 40%; */
+	position: absolute;
+	top: 330px;
+	left: 30px;
+	background: radial-gradient(#eee, #6a8ac9);
+	border: 1px solid #000;
+	padding: 0.5rem;
+	box-shadow: 0 0 20px #333;
+	/* opacity: 0.9; */
+  opacity: 0.9;
+}
+
+.stats-weather span {
+	font-style: italic;
+	font-weight: 500;
+  color: black;
+}
+
+
+@media screen and (max-width: 480px){
+	.stats-weather {
+		position: relative;
+		top: 0px;
+		left: 0px;
+    opacity: 1;
+    box-shadow: 0 0 0px #333;
+    border: 0px solid #000;
+    margin-bottom: 12px;
+
+  }
+	
+	img{
+		opacity: 1;
+		max-width: 100%;
+	}
 }
