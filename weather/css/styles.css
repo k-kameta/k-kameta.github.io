@@ -85,8 +85,8 @@ footer {
 html,
 body {
   /* text-align: center; */
-  margin-left: auto; 
-  margin-right: auto;
+  /* margin-left: auto; 
+  margin-right: auto; */
   /* text-align: left; */
   max-width: 980px;
 
@@ -117,11 +117,11 @@ p {
 }
 
 
-
 span {
   text-align: right;
   padding: 8px;
-  color: #888;
+  /* color: #888; */
+  color: tomato;
 }
 
 a {
@@ -169,7 +169,7 @@ a {
   background-color: #E7DFC6;
   color: black ;
   margin-top: 20px;
-  margin-left: 100px;
+  margin-left: 0px;
   margin-bottom: 10px;
   text-align:center;
   padding: 0.1em;
@@ -247,8 +247,8 @@ a {
 .stats-weather {
   /* max-width: 40%; */
 	position: absolute;
-	top: 280px;
-	left: 90px;
+	top: 265px;
+	left: 30px;
 	background: radial-gradient(#eee, #6a8ac9);
 	border: 1px solid #000;
 	padding: 0.5rem;
@@ -256,6 +256,22 @@ a {
 	/* opacity: 0.9; */
   opacity: 0.9;
 }
+
+#cover #temp #windChill #humidity #windSpeed {
+  color: yellow;
+}
+
+span.stats-weather {
+  color: yellow;
+}
+
+>Partly_cloudy</span></p>
+<p class="stats-weather2">High: <span id="temp"> 50°F</span></p>
+<p class="stats-weather2">Wind Chill: <span id="windChill"> °F</span></p>
+<p class="stats-weather2">Humidity: <span id="humidity">62 %</span></p>
+<p class="stats-weather2">Wind Speed: <span id="windSpeed"> 4 mps</span></p>
+
+
 
 .stats-weather span {
 	font-style: italic;
