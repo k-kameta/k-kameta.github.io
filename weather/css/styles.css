@@ -10,22 +10,6 @@ h2 {
   text-align: center;
 }
 
-.contentbox {
-  font-style: italic;
-  /* margin: 0 auto; */
-  /* max-width: 95%; */
-  /* max-width: 760px; */
-  /* width: 90%; */
-  background-color: #E7DFC6;
-  border: 1px dashed #000;
-  color: black ;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  margin-right: 0%;
-  /* border-radius: 8px; */
-  text-align: left;
-  padding: 0.1em; 
-}
 
 ul.navigation {
 margin-top: 0px;
@@ -144,7 +128,42 @@ a {
 }
 
 
-.contactbox {
+
+.contentbox-summary {
+  font-style: italic;
+  /* margin: 0 auto; */
+  /* max-width: 95%; */
+  /* max-width: 760px; */
+  /* width: 90%; */
+  background-color: #E7DFC6;
+  /* border: 1px dashed #000; */
+  color: black ;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 0%;
+  /* border-radius: 8px; */
+  text-align: left;
+  padding: 0.1em; 
+}
+
+.contentbox-article {
+  font-style: normal;
+  /* margin: 0 auto; */
+  /* max-width: 95%; */
+  /* max-width: 760px; */
+  /* width: 90%; */
+  background-color: #E7DFC6;
+  /* border: 1px dashed #000; */
+  color: black ;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 0%;
+  /* border-radius: 8px; */
+  text-align: left;
+  padding: 0.1em; 
+}
+
+.contactbox-5days {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -165,6 +184,28 @@ a {
   padding: 0.1em; 
 }
 
+
+
+.contactbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  /* height: 350px;
+  width: 100%;
+  top: -14rem; */
+  grid-gap: 0.5rem;
+
+  font-style: italic;
+  background-color: #E7DFC6;
+  /* border: 1px dashed #000; */
+  color: black ;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+  /* border-radius: 8px; */
+  text-align: left;
+  padding: 0.1em; 
+}
 
 #footer_map {
   display: flex;
@@ -194,7 +235,7 @@ a {
 .stats-weather {
   /* max-width: 40%; */
 	position: absolute;
-	top: 330px;
+	top: 290px;
 	left: 30px;
 	background: radial-gradient(#eee, #6a8ac9);
 	border: 1px solid #000;
