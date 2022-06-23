@@ -350,6 +350,7 @@ span.stats-weather {
     justify-content: left;
     margin-top: 15px;
     margin-bottom: 30px;
+    margin-left: 30px;
   }
 
   #img-article {
