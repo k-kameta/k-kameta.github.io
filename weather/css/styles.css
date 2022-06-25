@@ -347,16 +347,16 @@ a {
     margin-bottom: 0px;
     
  	/* background: radial-gradient(#eee, #6a8ac9); */
-	background: #4e85f1;
-	border: 1px solid #000;
-	padding: 0.5rem;
-	box-shadow: 0 0 20px #333;
-  opacity: 0.95;
-  
-  font-style: normal;
-  color: black;
-  font-size: .8rem;
-  line-height: 1;
+    background: #4e85f1;
+    border: 1px solid #000;
+    padding: 0.5rem;
+    box-shadow: 0 0 20px #333;
+    opacity: 0.95;
+    
+    font-style: normal;
+    color: black;
+    font-size: .9rem;
+    line-height: 1;
   }
 
 
@@ -417,7 +417,7 @@ a {
       position: absolute;
       top: 35%;
       left: 10%;
-      width: 210px;
+      width: 250px;
 
        /* background: radial-gradient(#eee, #6a8ac9); */
       background: #4e85f1;
@@ -428,7 +428,7 @@ a {
       
       font-style: normal;
       color: black;
-      font-size: .8rem;
+      font-size: 1.0rem;
       line-height: 1;
     } 
 }
