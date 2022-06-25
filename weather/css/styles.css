@@ -264,11 +264,9 @@ a {
 
 .stats-weather {
 	position: absolute;
-  top: 35%;
+  top: 37%;
   left: 4%;
-  
   width: 210px;
-
  	/* background: radial-gradient(#eee, #6a8ac9); */
 	background: #4e85f1;
 	border: 1px solid #000;
@@ -282,6 +280,17 @@ a {
   line-height: 1;
 } 
 
+.stats-weather h3{
+  text-align: center;
+}
+
+.stats-weather2{
+  text-align: center;
+}
+
+.stats-weather2 #cover {
+  text-align: center;
+}
 
 .stats-weather span {
 	font-style: normal;
@@ -289,6 +298,14 @@ a {
   color: yellow;
 }
 
+.table-weather {
+  margin-left: 40px;
+  align-content: center;
+  width: 250px; 
+  height: 170px; 
+  border-style: none; 
+  background-color: #4e85f1;
+}
 
 .flex-5days {
 	display: flex;
@@ -415,7 +432,7 @@ a {
 
     .stats-weather {
       position: absolute;
-      top: 35%;
+      top: 37%;
       left: 10%;
       width: 250px;
 
