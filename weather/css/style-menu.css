@@ -7,6 +7,7 @@ nav {
     max-width: 100%;
 	/* max-width: 95%; */
 	background-color: tomato;
+	/* background-color: #795548; */
     box-shadow: 1px 1px 4px 1px #888;
 }
 #current_page {
@@ -27,7 +28,8 @@ nav {
 .navigation a {
 	display: block;
 	padding: 0.75rem;
-	text-align: left;
+	/* text-align: left; */
+	text-align: right;	
 	text-decoration: none;
 	color: black;
 	font-weight: 700;
@@ -36,7 +38,8 @@ nav {
 }
 
 .navigation a.ham::before {
-	content: "🍔 ";
+	/* content: "🍔 "; */
+	content: "🔽 ";
 }
 
 .navigation a:hover {
@@ -52,7 +55,8 @@ nav {
 }
 
 .responsive a.ham::before {
-	content: "❌ Close ";
+	/* content: "❌ Close "; */
+	content: "❎ ";
 }
 
 /* Media Query for medium+ views */
