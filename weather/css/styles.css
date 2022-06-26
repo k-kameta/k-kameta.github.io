@@ -264,7 +264,7 @@ a {
 
 .stats-weather {
 	position: absolute;
-  top: 37%;
+  top: 40%;
   left: 4%;
   width: 210px;
  	/* background: radial-gradient(#eee, #6a8ac9); */
@@ -433,7 +433,7 @@ a {
 
     .stats-weather {
       position: absolute;
-      top: 37%;
+      top: 40%;
       left: 10%;
       width: 250px;
 
