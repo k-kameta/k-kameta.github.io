@@ -405,6 +405,14 @@ a {
   #footer_map {
     display: none;
   } 
+
+  header h1 {
+    font-size: 24px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (max-width: 600px){
