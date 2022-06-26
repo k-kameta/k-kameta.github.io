@@ -407,7 +407,14 @@ a {
   } 
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
+	.stats-weather {
+    font-size: .9rem;
+    line-height: 1;
+  }
+  }  
+
+  @media screen and (max-width: 700px){
   #address {
     /* display: flex;  */
       grid-column: 1;
