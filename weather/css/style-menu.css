@@ -62,7 +62,7 @@ nav {
 
 @media only screen and (max-width: 590px) { 
 	.navigation a {
-		text-align: left;	
+		text-align: right;	
 		font-size: clamp(0.8rem, 1vmin, 1rem);
 	}
 }
