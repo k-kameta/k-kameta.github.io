@@ -13,7 +13,7 @@ function Settoday(){
     var today = new Date() ;
     var weekday = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] ;  
     document.getElementById(weekday[today.getDay()]).style.display="block";
-    console.log(today); 
-    console.log(weekday[today.getDay()]);
+    // console.log(today); 
+    // console.log(weekday[today.getDay()]);
 }
 
