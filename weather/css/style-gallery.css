@@ -6,7 +6,7 @@
 }
 
 .gallery figcaption {
-    display: none;
+    display: block;
     padding-top: 0.6rem;
     padding-left: 0;
     padding-right: 0;
@@ -44,7 +44,7 @@ figure {
     }
 
     .gallery figcaption {
-        display: none;
+        display: block;
         padding-top: 0.6rem;
         padding-left: 0;
         padding-right: 0;
