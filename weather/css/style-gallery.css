@@ -1,9 +1,6 @@
-.gllery{
-    width: 980px;
-}
-
 
 .gallery {
+    max-width: 980px;
     display: grid;
     justify-content: center;
 }
@@ -26,7 +23,7 @@
     font-weight: 600;
 }
 
-.item {
+.item img {
     width: auto;
 }
 
