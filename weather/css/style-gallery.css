@@ -1,14 +1,12 @@
-
 .gallery {
     max-width: 980px;
     display: grid;
     justify-content: center;
 }
 
-.gallery div {
+.content.gallery div .item{
     border-radius: 1rem 1rem 0 0;
     width: 100%;
-    width: auto;
 }
 
 .gallery figcaption {
@@ -23,9 +21,11 @@
     font-weight: 600;
 }
 
+/* ******  */
 .item img {
-    width: auto;
+    width: 100%;
 }
+/* ******  */
 
 /* @media (min-width: 32.5em) { */
 @media (min-width: 400px) {
@@ -46,15 +46,15 @@
         padding: 0.1rem 1rem 0.5rem 0.5rem;
         background-color: white;
         font-weight: 600;
-    
-    }
- 
+        }
 }
 
 /* @media (min-width: 64em) { */
     @media (min-width: 600px) {
         .gallery {
             grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 2%;
+            margin-right: 2%;
             column-gap: 0.5rem;
             row-gap: 2rem;
             padding: 0.5rem 0.8rem;
@@ -64,5 +64,5 @@
     
 /* hover effect */
 /* .norm:hover {box-shadow: 0 0 50px #333;} */
-.item:hover {box-shadow: 0 0 50px #333;}
+.item:hover {box-shadow: 0 0 10px #333;}
 
