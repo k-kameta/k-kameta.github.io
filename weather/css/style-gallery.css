@@ -1,0 +1,57 @@
+/* @media (min-width: 64em) { */
+@media (min-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0.5rem;
+        row-gap: 2rem;
+        padding: 0.5rem 0.8rem;
+        font-size: .8rem;
+    }
+}
+
+/* @media (min-width: 32.5em) { */
+@media (min-width: 400px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        column-gap: 0.3rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .gallery figcaption {
+        padding-top: 0.6rem;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        padding-bottom: 0.8rem;
+
+        padding: 0.1rem 1rem 0.5rem 0.5rem;
+        background-color: white;
+        font-weight: 600;
+    
+    }
+  
+}
+
+.gallery {
+    display: grid;
+    justify-content: center;
+}
+
+.gallery div {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    width: auto;
+}
+
+.gallery figcaption {
+    padding-top: 0.6rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    padding-bottom: 0.8rem;
+
+    padding: 0.1rem 1rem 0.5rem 0.5rem;
+    background-color: white;
+    font-weight: 600;
+}

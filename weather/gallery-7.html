@@ -20,14 +20,6 @@
 <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 
 <!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
-
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/small.css">
 <link rel="stylesheet" href="css/medium.css">
@@ -35,11 +27,13 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/style-menu.css">
 <link rel="stylesheet" href="css/style-sns.css">
-<link rel="stylesheet" href="css/flex.css">
+<!-- <link rel="stylesheet" href="css/flex.css"> -->
+<link rel="stylesheet" href="css/style-gallery.css">
 
      
 </head>
-<body onload="Settoday();">
+<!-- <body onload="Settoday();"> -->
+<body>
 <!-- HEADER HERE -->
 	<header>
         <img id="logo_img" src="assets/667368_celcius_clouds_farenheit_sunshine_temerature_icon.png" alt="weathersite-logo"> 
@@ -70,25 +64,61 @@
         
         <h2>Weather Gallery</h2>
 
-        <!-- <div class="contentbox-summary">
-
-              <source media="(min-width: 640px)" srcset="images/wdd230_image_franklin-s640px.jpg">
-              <source media="(min-width: 400px)" srcset="images/wdd230_image_franklin-s400px.jpg">
-              <img id="img-hello" src="images/wdd230_image_franklin-s250px.jpg" alt="Preston image">
-                      
-
-            </picture>
- 
-              <section class="stats-weather">
-                    <h3>Weather Summary</h3>
-                    <hr>
-                    <p class="stats-weather2">Currently: <span id="cover">Partly_cloudy</span></p>
-                    <p class="stats-weather2">High: <span id="temp">51</span> °F</p>
-                    <p class="stats-weather2">Wind Chill: <span id="windChill"> N/A </span> °F</p>
-                    <p class="stats-weather2">Humidity: <span id="humidity">62</span> %</p>
-                    <p class="stats-weather2">Wind Speed: <span id="windSpeed">5</span> mps</p>
-                  </section>
-        </div> -->
+        <div class="gallery">
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-binyamin-mellish-108941.jpg" 
+                alt="Image 1" />
+                <figcaption>Rainbow on a field</figcaption>
+            </div>
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-harrison-haines-2869657.jpg" 
+                alt="Image 2" />
+                <figcaption>A tree under storm</figcaption>
+            </div>
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-jonathan-petersson-1198507.jpg" 
+                alt="Image 3" />
+                <figcaption>Sunny day</figcaption>
+            </div>
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-pixabay-53459.jpg" 
+                alt="Image 4" />
+                <figcaption>Lightning - 1</figcaption>
+            </div>
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-pixabay-355989.jpg" 
+                alt="Image 5" />
+                <figcaption>Lightning - 2</figcaption>
+            </div>
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-pixabay-207985.jpg" 
+                alt="Image 6" />
+                <figcaption>Snow</figcaption>
+            </div>
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-pixabay-531756.jpg" 
+                alt="Image 7" />
+                <figcaption>Blue sky with clouds</figcaption>
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-karol-wisniewski-845619.jpg" 
+                alt="Image 8" />
+                <figcaption>Foggy day</figcaption>
+            </div>
+            <div class ="item">
+                <img src="images/gallery/s-placeholder-image.jpg"
+                data-src="images/gallery/s-pexels-paweł-fijałkowski-1253748.jpg" 
+                alt="Image 9" />
+                <figcaption>Rainbow - 2</figcaption>
+            </div>
+        </div>
 
 
         <div class="contactbox">
@@ -130,7 +160,7 @@
     </footer>
     <script defer src="js/dates.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src ="js/imagehandling.js"></script>
     
     </body>
 </html>
