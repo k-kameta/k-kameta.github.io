@@ -1,5 +1,9 @@
+.gllery{
+    width: 980px;
+}
+
 /* @media (min-width: 64em) { */
-@media (min-width: 480px) {
+@media (min-width: 600px) {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 0.5rem;
@@ -54,4 +58,8 @@
     padding: 0.1rem 1rem 0.5rem 0.5rem;
     background-color: white;
     font-weight: 600;
+}
+
+.item {
+    width: auto;
 }
