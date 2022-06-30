@@ -14,6 +14,6 @@ function Settoday(){
     var weekday = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] ;  
     document.getElementById(weekday[today.getDay()]).style.display="block";
     console.log(today); 
-    console.log(weekday);
+    console.log(weekday[today.getDay()]);
 }
 
