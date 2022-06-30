@@ -6,6 +6,7 @@
 }
 
 .gallery figcaption {
+    display: none;
     padding-top: 0.6rem;
     padding-left: 0;
     padding-right: 0;
@@ -43,6 +44,7 @@ figure {
     }
 
     .gallery figcaption {
+        display: none;
         padding-top: 0.6rem;
         padding-left: 0;
         padding-right: 0;
@@ -66,9 +68,16 @@ figure {
             padding: 0.5rem 0.8rem;
             font-size: .8rem;
         }
+
+        .gallery figcaption {
+            display: block;
+        }
+
+        /* hover effect */
+        /* .norm:hover {box-shadow: 0 0 50px #333;} */
+        .item:hover {box-shadow: 0 0 10px #333;}
+
     }
     
-/* hover effect */
-/* .norm:hover {box-shadow: 0 0 50px #333;} */
-.item:hover {box-shadow: 0 0 10px #333;}
+
 
