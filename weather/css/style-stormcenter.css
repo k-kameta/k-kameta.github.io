@@ -7,6 +7,11 @@ body {
 } 
 */
 
+.content-report {
+    max-width: 96%;
+    margin: 0 auto;
+}
+
 .content-thanks {
     margin-left: 10%;
     margin-right: 10%;
@@ -20,4 +25,21 @@ body {
     background-color: white;    
 
 }
+
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
+#ratingvalue {
+	margin: 0 10px;
+	color: #2075ff;
+}
+
+textarea {
+    background-color: white;
+}
+
+
+/* ======================== */
 
