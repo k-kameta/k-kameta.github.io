@@ -1,4 +1,5 @@
-/* lesson 9 */
+/* WDD230 - lesson 9 in week 4 */
+/* Kosei Kameta */
 
 body, main {
 	margin: 0 auto;
@@ -24,7 +25,10 @@ img {
 }
 
 .cards {
+
 	max-width: 96%;
+	max-width: 500px;
+
 	margin: 0 auto;
 	display: block;
 	justify-items: center;
@@ -37,6 +41,7 @@ img {
 }
 
 section {
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -55,9 +60,8 @@ section:hover {
 }
 
 
-name {
-	font-size: h3;
-	color: blue;
+h2 {
+	font-size: h2;
 	color: black;
 	margin-top: 0.9rem;
 	margin-bottom: 0.2rem;
@@ -86,13 +90,23 @@ birthplace {
 
 @media screen and (min-width: 35em) {
 	main {
-		max-width: 800px;
+		max-width: 96%;
 	}
 
 	.cards {
+		max-width: 96%;
+
 		display: grid;
         grid-template-columns: 1fr 1fr;
 	}
+
+	section {
+		margin: 0.7rem;
+	}
+
+	h2 {
+		font-size: h3;
+		}
 }
 
 @media screen and (min-width: 64em) {
@@ -105,8 +119,8 @@ birthplace {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
-	name {
-		font-size: h3;
+	h2 {
+		font-size: h2;
 		}
 		
 	birthdate {

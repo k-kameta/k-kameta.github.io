@@ -9,30 +9,30 @@ fetch(requestURL)
     })
 
     .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        // console.table(jsonObject);  // temporary checking for valid response and data parsing
 
         const prophets = jsonObject['prophets'];
 
         for (let i = 0; i < prophets.length; i++ ) {
-            console.i; // checking i
+            // console.i; // checking i
             // (how would you do this with a foreach method?)
 
             let card = document.createElement('section');
             let h2 = document.createElement('h2');
             let birthDate = document.createElement('birthDate');
             let birthPlace = document.createElement('birthPlace');
-            let img = document.createElement('img');
+            let image = document.createElement('img');
 
             h2.textContent = (i+1) +'. ' + prophets[i].name + ' ' + prophets[i].lastname;
             birthDate.textContent = `Date of Birth: ${prophets[i].birthdate}`;
 			birthPlace.textContent = `Place of Birth: ${prophets[i].birthplace}`;
-            img.setAttribute('src', prophets[i].imageurl);
-			img.setAttribute("alt", `Image of ${prophets[i].name}${prophets[i].lastname}_(${prophets[i].order})`);
+            image.setAttribute('src', prophets[i].imageurl);
+			image.setAttribute("alt", `Image of ${prophets[i].name}${prophets[i].lastname}_(${prophets[i].order})`);
             
             card.appendChild(h2);
             card.appendChild(birthDate);
             card.appendChild(birthPlace);
-            card.appendChild(img);
+            card.appendChild(image);
             document.querySelector('div.cards').appendChild(card);
 
         }
