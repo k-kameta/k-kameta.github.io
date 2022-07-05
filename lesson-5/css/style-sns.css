@@ -1,0 +1,36 @@
+.fas_sns_iconcolor{
+	margin: 0;
+	padding: 0; 
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+.fas_sns_iconcolor li{
+	list-style: none;
+	margin: 0 10px 0 0;
+}
+.fas_sns_iconcolor li:last-child{
+	margin: 0 0 0 0;
+}
+.fas_sns_iconcolor li a{
+	text-decoration: none;
+	display: inline-block;
+}
+.fas_sns_iconcolor li a i{
+	display: inline-block;
+	width: 30px;
+	height: 30px;	
+	color: #333;
+	font-size: 30px;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.fas_sns_iconcolor li a i.fa-twitter{ color: #66ccff; }
+.fas_sns_iconcolor li a i.fa-facebook-square{ color: #3366cc; }
+.fas_sns_iconcolor li a i.fa-line{ color: #33cc33; }
+.fas_sns_iconcolor li a i.fa-question-circle{ color: #3399cc; }
+.fas_sns_iconcolor li a i.fa-get-pocket{ color: #ff0000; }
+.fas_sns_iconcolor li a i.fa-rss-square{ color: #ff9900; }
