@@ -133,6 +133,7 @@ section img {
  
 .towns {
 	margin: 0 auto;
+	margin-bottom: 18px;
 }
 
 /* =========================== */
@@ -165,6 +166,7 @@ section img {
 		display: flex;
 		flex: 1fr 1fr;
 		flex-direction: row;
+		margin-bottom: 18px;
 	}
 	
 	.townInfo {
