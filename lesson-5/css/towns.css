@@ -140,17 +140,16 @@ section img {
 	margin-bottom: 1rem;
   }
   
-#message-wireframe {
-	text-align: center;
-	margin: 0.7rem;
-}
-
 .townPhoto{
 	margin-top: 0.4rem;
 	margin-bottom: 0.1rem;
-
 }
  
+#message-wireframe a {
+	color: yellow;
+	text-align: center;
+	margin: 0.7rem;
+}
 
 /* =========================== */
 
