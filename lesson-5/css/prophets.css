@@ -11,6 +11,14 @@ content h2 {
 	margin-bottom: 0rem;
 }
 
+content h4 {
+	text-align: center;
+}
+
+#message-wireframe {
+	text-align: center;
+}
+
 header, footer {
 	display: block;
     box-shadow: 0 0 8px 1px grey;

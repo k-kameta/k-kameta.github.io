@@ -6,6 +6,11 @@ content h2 {
   margin-bottom: 0rem;
 }
 
+content h4 {
+    text-align: center;
+}
+
+
 
 html,
 body {
