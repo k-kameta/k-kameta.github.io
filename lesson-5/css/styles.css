@@ -2,6 +2,10 @@ main.content {
   max-width: 980px;
 }
 
+content h2 {
+  margin-bottom: 0rem;
+}
+
 html,
 body {
   margin: 0 auto;
@@ -93,6 +97,10 @@ header {
   text-align: center;
   padding: 0.1em;
   /* font-size: x-large; */
+}
+
+header h2 {
+  color: white;  
 }
 
 footer {
@@ -350,6 +358,7 @@ a {
 
 
 
+
 @media screen and (max-width: 480px){ 
 /* @media only screen and (max-width: 32.5em){  */
 	.stats-weather {
@@ -413,6 +422,9 @@ a {
   }
 
 }
+
+
+
 
 @media screen and (max-width: 600px){
 	.stats-weather {

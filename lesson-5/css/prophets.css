@@ -1,0 +1,178 @@
+/* WDD230 - lesson 9 in week 4 */
+/* Kosei Kameta */
+
+body, main {
+	margin: 0 auto;
+	align-items: center;
+}
+
+
+content h2 {
+	margin-bottom: 0rem;
+}
+
+header, footer {
+	display: block;
+    box-shadow: 0 0 8px 1px grey;
+	background-color: #795548;
+    padding: 0.6rem 0.6rem;
+    color: white;
+	text-align: center;
+}
+
+/* =========================== */
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 0.8rem;
+	margin-bottom: 0.4rem;
+}
+
+.cards {
+	max-width: 96%;
+	/* max-width: 500px; */
+
+	margin: 0 auto;
+	display: block;
+	justify-items: center;
+	text-align: center;
+
+	padding-left: 0 1rem;
+	padding-right: 0 1rem;
+	/* padding-top: 1rem; */
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+section {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 0.7px solid gray;
+	background-color: #E7DFC6;
+	padding: 0.2rem;
+	padding-bottom: 1rem;
+	margin: 1rem;
+
+	border-radius: 5px 5px 5px 5px;
+}
+
+
+section:hover {
+	box-shadow: 0 0 15px #333;
+}
+
+
+section h2 {
+	font-size: h2;
+	color: black;
+	margin-top: 0.9rem;
+	margin-bottom: 0.2rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+}
+
+birthdate {
+	/* font-size: small; */
+	font-style: italic;
+	color: black;
+	margin: 0.4em;
+}
+
+birthplace {
+	/* font-size: small; */
+	font-style: italic;
+	color: black;
+	margin: 0.4em;
+}
+
+
+/* ==== town home box ==== */
+
+section motto {
+	margin: 0.4em;
+	margin-bottom: 1rem;
+	font-style: italic;
+  }
+  
+section yearfounded {
+	margin: 0.4em;
+	margin-bottom: 1rem;
+	font-style: normal;
+  }
+  
+section currentpopulation {
+	margin: 0.4em;
+	margin-bottom: 1rem;
+	font-style: normal;
+  }
+  
+section avergerainfall {
+	margin: 0.4em;
+	margin-bottom: 1rem;
+	font-style: normal;
+  }
+  
+section img {
+	margin: 0.4em;
+	margin-bottom: 1rem;
+  }
+  
+   
+  
+  /* =================== */
+  
+
+/* =========================== */
+
+
+@media screen and (min-width: 35em) {
+	main {
+		max-width: 96%;
+	}
+
+	.cards {
+		max-width: 96%;
+
+		display: grid;
+        grid-template-columns: 1fr;
+	}
+
+	section {
+		margin: 0.7rem;
+	}
+
+	h2 {
+		font-size: h3;
+		}
+}
+
+@media screen and (min-width: 64em) {
+	main {
+		max-width: 96%;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	h2 {
+		font-size: h2;
+		}
+		
+	birthdate {
+		font-size: small;
+		}
+		
+	birthplace {
+		font-size: small;
+		}
+
+	section {
+		margin: 0.85rem;
+	}
+}
+	

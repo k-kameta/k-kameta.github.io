@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+/* body {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 5px;
+}
+h1 {
+	font-size: 1.5em;
+	border-bottom: 1px solid #abe;
+	font-family: Acme, Arial, sans-serif;
+}
+h2 {
+	font-size: 1em;
+	color: tomato;
+	font-family: Acme, Arial, sans-serif;
+	margin-left: 10px;
+} */
+
+.tiny {
+	font-size: .8rem;
+}
+.tomato {
+	color: tomato;
+}
+
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+	flex-flow: row wrap;
+    /* width: 90%; */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 25px; 
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	/* background-color: #bed; */
+    background-color: white;
+    
+}
+.flex-col, .column-col, .grid-col {
+	border-bottom: 0.1px solid #333;
+	border-left: 0.1px solid #333;
+	text-align: center;
+}
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: red;
+	color: white;
+}
+.flex, .column, .grid {
+	border-right: 1px solid #333;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
+
+.img {
+	border-radius: 100px;
+	padding: 0.25rem;
+    width: 3%;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.col-head,th {
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: tomato;
+	color: white;
+}
+
+
+/* ================ not used here ================= */
+/* Table styling and layout with no extras*/
+table,th,td {
+	border: thin solid #333;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+td {
+	background-color: #bad;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+/* Column styling and layout */
+.column {
+	column-count: 6;
+	column-gap: 0;
+}
+.column img {
+	width: 50%;
+}
+.column-col {
+	background-color: #abe;
+}
+
+/* Grid */
+.grid { 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+}
+.grid-col {
+	background-color: tomato;
+}

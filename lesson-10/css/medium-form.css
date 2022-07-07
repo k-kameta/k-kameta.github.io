@@ -1,0 +1,19 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+    /*----------- BODY --------------*/
+    
+    /*----------- HEADER --------------*/
+    
+    /*----------- NAVIGATION --------------*/
+    
+    /*----------- MAIN --------------*/
+    
+    form label.sbs {
+        padding: 0.2rem 0;
+    }    
+    
+    /*----------- FOOTER --------------*/
+        
+    } /* end of media query */
+
