@@ -163,6 +163,7 @@ section img {
 		} */
 
 	.towns {
+		display: flex;
 		flex: 1fr 1fr;
 		flex-direction: row;
 	}
@@ -188,6 +189,10 @@ section img {
 		flex-direction: column;
 	}
 	
+	.townPhoto img {
+		width: 50%;
+	}
+
 	/* h2 {
 		font-size: medium;
 		} */
