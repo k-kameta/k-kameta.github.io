@@ -43,8 +43,8 @@ img {
 	justify-items: center;
 	text-align: center;
 
-	padding-left: 0 1rem;
-	padding-right: 0 1rem;
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
 	padding-top: 1rem;
 	padding-bottom: 0rem;
 }
@@ -132,8 +132,7 @@ section img {
 }
  
 .towns {
-	flex: 1fr;
-	flex-direction: row;
+	margin: 0 auto;
 }
 
 /* =========================== */
@@ -168,6 +167,14 @@ section img {
 		flex-direction: row;
 	}
 	
+	.townInfo {
+		width: 40%;
+	}
+
+	.townPhoto {
+		width: 60%;
+	}
+
 	.towns img {
 		width: 96%;
 	}
@@ -189,13 +196,18 @@ section img {
 		flex-direction: column;
 	}
 	
-	.townPhoto img {
-		width: 50%;
+	.townInfo {
+		width: 100%;
 	}
 
-	/* h2 {
-		font-size: medium;
-		} */
+	.townPhoto {
+		width: 100%;
+	}
+
+	.towns img {
+		width: 96%;
+	}
+}
 		
 	birthdate {
 		font-size: small;
