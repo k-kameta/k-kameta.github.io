@@ -1,5 +1,5 @@
-// WD230-W05 
-// 
+// WD230-W05
+//
 // "towns": [
 //     {
 //       "name": "Soda Springs",
@@ -14,7 +14,7 @@
 //         "October 15-16: Octoberfest"
 //       ]
 //     },
-// Display ---  the motto, year founded, population, and annual rainfall. 
+// Display ---  the motto, year founded, population, and annual rainfall.
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -26,14 +26,16 @@ fetch(requestURL)
     .then(function (jsonObject) {
         // console.table(jsonObject);  // temporary checking for valid response and data parsing
 
+        let direction = "row";
+
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++ ) {
             console.i; // checking i
             // (how would you do this with a foreach method?)
 
-            if (towns[i].name == "Preston" || 
-                      towns[i].name == "Soda Springs" || 
+            if (towns[i].name == "Preston" ||
+                      towns[i].name == "Soda Springs" ||
                       towns[i].name == "Fish Haven") {
 
                 let card = document.createElement('section');
@@ -63,32 +65,44 @@ fetch(requestURL)
                 else if (towns[i].name == "Fish Haven") {
                     photo.setAttribute('src', "images/FishHaven-dreamstime_s_85958730.jpg");
                 };
-                
+
+                if (direction == "row.reverse") {
+                    direction = "row";
+                }
+                else {
+                    direction ="row.reverse";
+                };
+
                 div1.classList.add("townInfo");
                 div1.appendChild(h2);
                 div1.appendChild(motto);
                 div1.appendChild(yearFounded);
                 div1.appendChild(currentPopulation);
                 div1.appendChild(averageRainfall);
-            
+
                 div2.classList.add("townPhoto");
                 div2.appendChild(photo);
-        
-                card.classList.add("towns");
+
+                if (direction=="row"){
+                    card.classList.add("towns");
+                }
+                else {
+                    card.classList.add("towns_r");
+                }
+                // card.classList.add(direction);
                 card.appendChild(div1);
                 card.appendChild(div2);
                 document.querySelector('div.cards').appendChild(card);
-                        
+
                 }
 
         }
     });
 
     // function Settown(){
-    //     var towns = ["Soda Spring", "Preston", "Fish Haven"] ;  
-    //     document.getElementById(towns[i]).style.display="block";     
-    
-    //     // console.log(today); 
+    //     var towns = ["Soda Spring", "Preston", "Fish Haven"] ;
+    //     document.getElementById(towns[i]).style.display="block";
+
+    //     // console.log(today);
     //     // console.log(weekday[today.getDay()]);
     // }
-    

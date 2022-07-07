@@ -83,6 +83,11 @@ section h2 {
 
 /* ==== towns home box ==== */
 
+.towns {
+	margin: 0 auto;
+	margin-bottom: 18px;
+}
+
 .towns h2 {
 	font-size: large;
 	margin: 0.4em;
@@ -101,8 +106,35 @@ section h2 {
 	margin: 0em;
 	font-style: normal;
   }
-  
- 
+
+/* --- */
+
+.towns_r {
+	margin: 0 auto;
+	margin-bottom: 18px;
+}
+
+.towns_r h2 {
+	font-size: large;
+	margin: 0.4em;
+	margin-bottom: 1rem;
+	font-style: normal;
+  }
+
+.towns_r h5 {
+	margin: 0.4em;
+	margin-bottom: 1rem;
+	font-style: italic;
+  }
+
+.towns_r h4 {
+	font-size: small;
+	margin: 0em;
+	font-style: normal;
+  }
+
+/* ----   */
+
 section img {
 	margin: 0.4em;
 	margin-bottom: 1rem;
@@ -119,10 +151,6 @@ section img {
 
 }
  
-.towns {
-	margin: 0 auto;
-	margin-bottom: 18px;
-}
 
 /* =========================== */
 
@@ -150,13 +178,20 @@ section img {
 		font-size: small;
 		} */
 
-	.towns {
+	.towns towns_r {
 		display: flex;
 		flex: 1fr 1fr;
-		flex-direction: row;
 		margin-bottom: 18px;
 	}
-	
+
+	.towns {
+		flex-direction: row;
+	}
+
+	.towns_r {
+		flex-direction: row-reverse;
+	}
+		
 	.townInfo {
 		width: 40%;
 	}
@@ -168,12 +203,13 @@ section img {
 	.towns img {
 		width: 96%;
 	}
+
 }
 
 /* @media screen and (min-width: 64em) { */
 @media screen and (min-width: 940px) {
-		main {
-		max-width: 100%;
+	main {
+	max-width: 100%;
 	}
 
 	.cards {
@@ -181,8 +217,17 @@ section img {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
-	.towns {
+	.towns towns_r{
+		display: flex;
 		flex: 1fr 1fr;
+		flex-direction: column;
+	}
+	
+	.towns{
+		flex-direction: column;
+	}
+
+	.towns_r{
 		flex-direction: column;
 	}
 	
@@ -197,9 +242,10 @@ section img {
 	.towns img {
 		width: 96%;
 	}
-}
-		
+
+    
 	section {
+		display: flex;
 		margin: 0.85rem;
 	}
 }
