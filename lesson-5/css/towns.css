@@ -4,6 +4,7 @@
 body, main {
 	margin: 0 auto;
 	align-items: center;
+	max-width: 96%;
 }
 
 content h2 {
@@ -20,7 +21,7 @@ header, footer {
 	display: block;
     box-shadow: 0 0 8px 1px grey;
 	background-color: #795548;
-    padding: 0.6rem 0.6rem;
+    /* padding: 0.6rem 0.6rem; */
     color: white;
 	text-align: center;
 }
@@ -43,8 +44,8 @@ img {
 	justify-items: center;
 	text-align: center;
 
-	padding-left: 0.1rem;
-	padding-right: 0.1rem;
+	/* padding-left: 0.1rem;
+	padding-right: 0.1rem; */
 	padding-top: 1rem;
 	padding-bottom: 0rem;
 }
@@ -78,19 +79,6 @@ section h2 {
 	margin-right: 0.2rem;
 }
 
-birthdate {
-	/* font-size: small; */
-	font-style: italic;
-	color: black;
-	margin: 0.4em;
-}
-
-birthplace {
-	/* font-size: small; */
-	font-style: italic;
-	color: black;
-	margin: 0.4em;
-}
 
 
 /* ==== towns home box ==== */
@@ -185,7 +173,7 @@ section img {
 /* @media screen and (min-width: 64em) { */
 @media screen and (min-width: 940px) {
 		main {
-		max-width: 96%;
+		max-width: 100%;
 	}
 
 	.cards {
@@ -211,14 +199,6 @@ section img {
 	}
 }
 		
-	birthdate {
-		font-size: small;
-		}
-		
-	birthplace {
-		font-size: small;
-		}
-
 	section {
 		margin: 0.85rem;
 	}
