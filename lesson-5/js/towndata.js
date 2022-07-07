@@ -41,10 +41,10 @@ fetch(requestURL)
                 let div2 = document.createElement('div');
 
                 let h2 = document.createElement('h2');
-                let motto = document.createElement('motto');
-                let yearFounded = document.createElement('yearFounded');
-                let currentPopulation = document.createElement('currentPopulation');
-                let averageRainfall = document.createElement('averageRainfall');
+                let motto = document.createElement('h5');
+                let yearFounded = document.createElement('h4');
+                let currentPopulation = document.createElement('h4');
+                let averageRainfall = document.createElement('h4');
                 let photo = document.createElement('img');
 
                 h2.textContent = towns[i].name;
@@ -74,6 +74,7 @@ fetch(requestURL)
                 div2.classList.add("townPhoto");
                 div2.appendChild(photo);
         
+                card.classList.add("towns");
                 card.appendChild(div1);
                 card.appendChild(div2);
                 document.querySelector('div.cards').appendChild(card);

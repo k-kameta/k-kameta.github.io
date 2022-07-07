@@ -6,8 +6,8 @@ body, main {
 	align-items: center;
 }
 
-
 content h2 {
+	font-size: medium;
 	margin-bottom: 0rem;
 }
 
@@ -15,9 +15,6 @@ content h4 {
 	text-align: center;
 }
 
-#message-wireframe {
-	text-align: center;
-}
 
 header, footer {
 	display: block;
@@ -46,12 +43,10 @@ img {
 	justify-items: center;
 	text-align: center;
 
-	/* padding-left: 0 1rem;
-	padding-right: 0 1rem; */
-
-	/* padding-top: 1rem; */
-	padding-top: 0.5rem;
-	padding-bottom: 1rem;
+	padding-left: 0 1rem;
+	padding-right: 0 1rem;
+	padding-top: 1rem;
+	padding-bottom: 0rem;
 }
 
 section {
@@ -62,7 +57,7 @@ section {
 	border: 0.7px solid gray;
 	background-color: #E7DFC6;
 	padding: 0.2rem;
-	padding-bottom: 1rem;
+	padding-bottom: 0.5rem;
 	margin: 1rem;
 
 	border-radius: 5px 5px 5px 5px;
@@ -98,46 +93,54 @@ birthplace {
 }
 
 
-/* ==== town home box ==== */
+/* ==== towns home box ==== */
 
-section motto {
+.towns h2 {
+	font-size: large;
+	margin: 0.4em;
+	margin-bottom: 1rem;
+	font-style: normal;
+  }
+
+.towns h5 {
 	margin: 0.4em;
 	margin-bottom: 1rem;
 	font-style: italic;
   }
-  
-section yearfounded {
-	margin: 0.4em;
-	margin-bottom: 1rem;
+
+.towns h4 {
+	font-size: small;
+	margin: 0em;
 	font-style: normal;
   }
   
-section currentpopulation {
-	margin: 0.4em;
-	margin-bottom: 1rem;
-	font-style: normal;
-  }
-  
-section avergerainfall {
-	margin: 0.4em;
-	margin-bottom: 1rem;
-	font-style: normal;
-  }
-  
+ 
 section img {
 	margin: 0.4em;
 	margin-bottom: 1rem;
   }
   
-   
-  
-  /* =================== */
-  
+#message-wireframe {
+	text-align: center;
+	margin: 0.7rem;
+}
+
+.townPhoto{
+	margin-top: 0.4rem;
+	margin-bottom: 0.1rem;
+
+}
+ 
+.towns {
+	flex: 1fr;
+	flex-direction: row;
+}
 
 /* =========================== */
 
 
-@media screen and (min-width: 35em) {
+/* @media screen and (min-width: 35em) { */
+@media screen and (min-width: 640px) {
 	main {
 		max-width: 96%;
 	}
@@ -150,16 +153,28 @@ section img {
 	}
 
 	section {
+		display: flex;
 		margin: 0.7rem;
+
 	}
 
-	h2 {
+	/* h2 {
 		font-size: small;
-		}
+		} */
+
+	.towns {
+		flex: 1fr 1fr;
+		flex-direction: row;
+	}
+	
+	.towns img {
+		width: 96%;
+	}
 }
 
-@media screen and (min-width: 64em) {
-	main {
+/* @media screen and (min-width: 64em) { */
+@media screen and (min-width: 940px) {
+		main {
 		max-width: 96%;
 	}
 
@@ -168,9 +183,14 @@ section img {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
-	h2 {
+	.towns {
+		flex: 1fr 1fr;
+		flex-direction: column;
+	}
+	
+	/* h2 {
 		font-size: medium;
-		}
+		} */
 		
 	birthdate {
 		font-size: small;
