@@ -281,7 +281,7 @@ a {
   position: absolute;
   top: 40%;
   left: 4%;
-  width: 250px;
+  width: 230px;
  	/* background: radial-gradient(#eee, #6a8ac9); */
 	background: #4e85f1;
 	border: 1px solid #000;
@@ -511,7 +511,7 @@ a {
       position: absolute;
       top: 40%;
       left: 10%;
-      width: 250px;
+      width: 300px;
 
        /* background: radial-gradient(#eee, #6a8ac9); */
       background: #4e85f1;
@@ -522,21 +522,24 @@ a {
       
       font-style: normal;
       color: black;
-      font-size: 0.8rem;
+      font-size: 1.0rem;
       line-height: 1;
     } 
-}
- 
+    .stats-weather2 {
+      width: 120px;
+    }
+
+
 @media screen and (min-width: 1200px){
   .stats-weather {
-    width: 250px;
+    /* width: 300px; */
     position: absolute;
     left: 17%;
   }
 }
 @media screen and (min-width: 1400px){
   .stats-weather {
-    width: 250px;
+    /* width: 300px; */
     position: absolute;
     left: 22%;
   }
