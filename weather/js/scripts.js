@@ -11,7 +11,12 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
   see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
   or https://www.w3schools.com/js/js_arrow_function.asp
 
-  classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+  classList property - https://developer.mozilla.org/en-U<h1>OpenWeatherMap.org API Test</h1>
+<p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+<hr>
+<p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+
+<script src="js/weatherapi.js"></script>S/docs/Web/API/Element/classList
   */
 
 
