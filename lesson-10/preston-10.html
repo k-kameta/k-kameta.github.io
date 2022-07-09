@@ -94,12 +94,12 @@
     <nav>
         <ul class="navigation">
           <li><a href="#" class="ham">Menu</a></li>
-          <li><a href="../index.html">Home</a></li>
-            <li><a id = "current_page" href="preston.html">Preston</a></li>
+          <li><a href="index.html">Home</a></li>
+            <li><a id = "current_page" href="preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="../weather/stormcenter.html">Storm Center</a></li>
+            <li><a href="../weather/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     
@@ -163,7 +163,7 @@
                  <div class = stats-weather-column>
                       <div class="lable">
                         <p class="stats-weather2">Currently: </p>
-                        <p class="stats-weather2">High: </p>
+                        <p class="stats-weather2">Temperature: </p>
                         <p class="stats-weather2">Wind Chill: </p>
                         <p class="stats-weather2">Humidity: </p>
                         <p class="stats-weather2">Wind Speed: </p>
@@ -180,81 +180,47 @@
         </div>
 
         <div class="contentbox-5days">
-            <h2>5 Day Forecast</h2>
-                <div class="flex-5days">
+          <h2>5 Day Forecast</h2>
+          <div class="forecast-flex">  
 
-                  <div class="weather-pic">
+          </div>
+ 
+              <div class="flex-5days">
+                    <div class="weather-pic">
                     <br>
                     Mon<br>
                     <img class="img-weather" src="images/sunny.png" alt="weather pic">
                     <br>50 °F
+               </div>
 
-                  </div>
-                  <div class="weather-pic">
+               <div class="weather-pic">
                     <br>
                     Tue<br>
                     <img  class="img-weather" src="images/sunny.png" alt="weather pic">
                     <br>60 °F
-                  </div>
+                </div>
  
-                  <div class="weather-pic">
+                <div class="weather-pic">
                     <br>
                     Wed<br>
                     <img  class="img-weather2" src="images/cloudy.png" alt="weather pic">
                     <br>55 °F
-                  </div>
+                </div>
  
-                  <div class="weather-pic">
+                <div class="weather-pic">
                     <br>
                     Thu<br>
                     <img  class="img-weather" src="images/rain.png" alt="weather pic">
                     <br>53 °F
-                  </div>
+                </div>
  
-                  <div class="weather-pic">
+                <div class="weather-pic">
                     <br>
                     Fri<br>
                     <img  class="img-weather" src="images/rain.png" alt="weather pic">
                     <br>65 °F
-                  </div>
-
-                <!-- ===================================================================== -->
-
-                <!-- <div class="weather-pic">
-                  <br>
-                  \Mon<br>
-                  <img class="img-weather-1" src="images/sunny.png" alt="weather pic">
-                  <br>50 °F
-                </div>
-                <div class="weather-pic">
-                  <br>
-                  Tue<br>
-                  <img  class="img-weather-2" src="images/sunny.png" alt="weather pic">
-                  <br>60 °F
-                </div>
-                <div class="weather-pic">
-                  <br>
-                  Wed<br>
-                  <img  class="img-weather-3" src="images/cloudy.png" alt="weather pic">
-                  <br>55 °F
-                </div>
-                <div class="weather-pic">
-                  <br>
-                  Thu<br>
-                  <img  class="img-weather-3" src="images/rain.png" alt="weather pic">
-                  <br>53 °F
-                </div>
-                <div class="weather-pic">
-                  <br>
-                  Fri<br>
-                  <img  class="img-weather-4" src="images/rain.png" alt="weather pic">
-                  <br>65 °F
-                </div> -->
-
-               <!-- ===================================================================== -->
-
-
-                </div>
+                </div> 
+      
         </div>
 
         <!-- 
@@ -340,7 +306,7 @@
 
 <!-- FOOTER HERE -->   
     <footer>
-        <div>&copy;<span id="year"></span> | Kosei Kameta | Tokyo | <a id="footer_link" href="https://www.byui.edu/online">BYU Online Learning</a></div> 
+        <div>&copy;<span id="year"></span> | <a class="footer_link" href="../index.html">Kosei Kameta</a> | Tokyo | <a class="footer_link" href="https://www.byui.edu/online">BYU Online Learning</a></div> 
         <div id="lastmod"> </div>
         <div id="currentdate"> </div>
 

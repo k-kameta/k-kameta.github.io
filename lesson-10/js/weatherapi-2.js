@@ -22,9 +22,9 @@ fetch(apiURL)
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
     const desc = jsObject.weather[0].description;  // note how we reference the weather array
 
-    document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    document.getElementById('icon').setAttribute('alt', desc);
+    // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+    // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+    // document.getElementById('icon').setAttribute('alt', desc);
 
   });
 
@@ -36,7 +36,7 @@ fetch(apiURL)
 
     jsObject.list.filter((value) => {
     if (value.dt_txt.includes("18:00:00")) {
-        // console.log(value);
+        console.log(value);
 
         const forcastFlex = document.querySelector(".forecast-flex");
         const divForecast = document.createElement("div");
@@ -72,7 +72,6 @@ fetch(apiURL)
         divForecast.classList.add("forecast-box");
 
         forcastFlex.appendChild(divForecast);
-    }
-    }
+      }
+    })
   });
-
