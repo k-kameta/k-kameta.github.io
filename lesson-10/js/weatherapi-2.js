@@ -2,7 +2,13 @@
 
 // units=metric(C), imperial(F), default (K=C+273.15)
 // Preston id= 5604473
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=ef7f0ce0a44726e7d57c9356d2d75387&units=imperial";
+
+const placeID = 5604473
+const apikey = "ef7f0ce0a44726e7d57c9356d2d75387"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id="+placeID+"&APPID="+apikey+"&units=imperial";
+
+//const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=#{placeID}&APPID=#{apikey}&units=imperial";
+
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -30,48 +36,48 @@ fetch(apiURL)
 
   // =============
 
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
+// fetch(apiURL)
+//   .then((response) => response.json())
+//   .then((jsObject) => {
 
-    jsObject.list.filter((value) => {
-    if (value.dt_txt.includes("18:00:00")) {
-        console.log(value);
+//     jsObject.list.filter((value) => {
+//     if (value.dt_txt.includes("18:00:00")) {
+//         console.log(value);
 
-        const forcastFlex = document.querySelector(".forecast-flex");
-        const divForecast = document.createElement("div");
-        const pDay = document.createElement("p");
-        const pIcon = document.createElement("img");
-        const ptemp = document.createElement("p");
+//         const forcastFlex = document.querySelector(".forecast-flex");
+//         const divForecast = document.createElement("div");
+//         const pDay = document.createElement("p");
+//         const pIcon = document.createElement("img");
+//         const ptemp = document.createElement("p");
 
-        // OBTAINING THE LINK OF ICON
-        const imagesrc = `https://openweathermap.org/img/w/${value.weather[0].icon}.png`;
+//         // OBTAINING THE LINK OF ICON
+//         const imagesrc = `https://openweathermap.org/img/w/${value.weather[0].icon}.png`;
 
-        const desc = value.weather[0].description;
-        const temp = value.main.temp;
+//         const desc = value.weather[0].description;
+//         const temp = value.main.temp;
 
-        //GET THE DATE FROM THE API
-        const currentDay = value.dt_txt.slice(0, 10);
+//         //GET THE DATE FROM THE API
+//         const currentDay = value.dt_txt.slice(0, 10);
 
-        // CONVERTING THE STRING TO DATE OBJECT AND SET UTC TIME
-        const currentDate = new Date(currentDay).toUTCString();
-        // console.log(currentDate);
-        // console.log(currentDay);
+//         // CONVERTING THE STRING TO DATE OBJECT AND SET UTC TIME
+//         const currentDate = new Date(currentDay).toUTCString();
+//         // console.log(currentDate);
+//         // console.log(currentDay);
 
-        // PASSING THE DATE AND THE TEMPERATURE
-        pDay.textContent = currentDate.slice(0, 3);
-        ptemp.textContent = `${temp} °F`;
+//         // PASSING THE DATE AND THE TEMPERATURE
+//         pDay.textContent = currentDate.slice(0, 3);
+//         ptemp.textContent = `${temp} °F`;
 
-        // SET THE ICON'S ATTRIBUTES
-        pIcon.setAttribute("alt", desc);
-        pIcon.setAttribute("src", imagesrc);
+//         // SET THE ICON'S ATTRIBUTES
+//         pIcon.setAttribute("alt", desc);
+//         pIcon.setAttribute("src", imagesrc);
 
-        divForecast.appendChild(pDay);
-        divForecast.appendChild(pIcon);
-        divForecast.appendChild(ptemp);
-        divForecast.classList.add("forecast-box");
+//         divForecast.appendChild(pDay);
+//         divForecast.appendChild(pIcon);
+//         divForecast.appendChild(ptemp);
+//         divForecast.classList.add("forecast-box");
 
-        forcastFlex.appendChild(divForecast);
-      }
-    })
-  });
+//         forcastFlex.appendChild(divForecast);
+//       }
+//     });
+//   });
