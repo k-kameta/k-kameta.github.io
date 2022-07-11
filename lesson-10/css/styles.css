@@ -281,7 +281,7 @@ a {
   margin: 0 auto;
   display: flex;
   flex-flow: row;
-  font-size: normal;
+  font-size: small;
   width: 90%;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -604,7 +604,7 @@ p.forecast-p {
 
 @media screen and (min-width: 1600px){
   .stats-weather {
-    width: 250px;
+    /* width: 250px; */
     position: absolute;
     left: 28%;
   }
