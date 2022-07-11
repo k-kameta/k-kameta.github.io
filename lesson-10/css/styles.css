@@ -277,6 +277,34 @@ a {
 /* ==================== Weather ===================== */
 
 
+.forecast-container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  font-size: normal;
+  width: 90%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.forecast-day {
+	flex: 1 1 auto;
+  width: 10%;
+	/* background-color: #bed;  */
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+  text-align: center;
+  font-size:medium;
+}
+
+p.forecast-p {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ====== */
+
 .stats-weather {
   position: absolute;
   top: 40%;
@@ -481,7 +509,14 @@ a {
     font-size: .8rem;
     line-height: 1;
   }
-  }  
+  
+  .forecast-container {
+    width: 80%;
+  }
+
+}  
+
+
 
   @media screen and (max-width: 700px){
   #address {
@@ -495,6 +530,11 @@ a {
       margin-bottom: 30px;
       margin-left: 30px;
     }
+
+    .forecast-container {
+      width: 80%;
+    }
+  
   }  
 
 @media screen and (min-width: 1000px){
@@ -528,6 +568,12 @@ a {
     .stats-weather2 {
       width: 120px;
     }
+
+    .forecast-container {
+      width: 70%;
+    }
+  
+
   }
 
 @media screen and (min-width: 1200px){
@@ -536,6 +582,12 @@ a {
     position: absolute;
     left: 17%;
   }
+
+  .forecast-container {
+    width: 60%;
+  }
+
+
 }
 @media screen and (min-width: 1400px){
   .stats-weather {
@@ -543,6 +595,11 @@ a {
     position: absolute;
     left: 22%;
   }
+
+  .forecast-container {
+    width: 60%;
+  }
+
 }
 
 @media screen and (min-width: 1600px){
@@ -551,5 +608,11 @@ a {
     position: absolute;
     left: 28%;
   }
+
+  .forecast-container {
+    width: 60%;
+  }
+
+
 }
 

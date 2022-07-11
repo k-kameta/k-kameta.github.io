@@ -7,77 +7,75 @@ const placeID = 5604473
 const apikey = "ef7f0ce0a44726e7d57c9356d2d75387"
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id="+placeID+"&APPID="+apikey+"&units=imperial";
 
-//const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=#{placeID}&APPID=#{apikey}&units=imperial";
-
-
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
-    // document.getElementById('current-temp').textContent = jsObject.main.temp;
-    // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    // const desc = jsObject.weather[0].description;  // note how we reference the weather array
-    // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    // document.getElementById('icon').setAttribute('alt', desc);
 
+    console.log('1 day data')
     console.log(jsObject);
+
 
     document.getElementById('temp').textContent = jsObject.main.temp;
     document.getElementById('windSpeed').textContent = jsObject.wind.speed;
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
     const desc = jsObject.weather[0].description;  // note how we reference the weather array
 
-    // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    // document.getElementById('icon').setAttribute('alt', desc);
-
   });
 
   // =============
 
-// fetch(apiURL)
-//   .then((response) => response.json())
-//   .then((jsObject) => {
 
-//     jsObject.list.filter((value) => {
-//     if (value.dt_txt.includes("18:00:00")) {
-//         console.log(value);
+const placeID2 = 5604473
+const apikey2 = "ef7f0ce0a44726e7d57c9356d2d75387"
+const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id="+placeID2+"&APPID="+apikey2+"&units=imperial";
+  
+fetch(apiURL2)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log('5 day data')
+    console.log(jsObject);
 
-//         const forcastFlex = document.querySelector(".forecast-flex");
-//         const divForecast = document.createElement("div");
-//         const pDay = document.createElement("p");
-//         const pIcon = document.createElement("img");
-//         const ptemp = document.createElement("p");
+    jsObject.list.filter((value) => {
+    if (value.dt_txt.includes("18:00:00")) {
+      console.log('filtered')
+      console.log(value);
 
-//         // OBTAINING THE LINK OF ICON
-//         const imagesrc = `https://openweathermap.org/img/w/${value.weather[0].icon}.png`;
+        const forcastContainer = document.querySelector(".forecast-container");
+        const div_forecast = document.createElement("div");
+        const p_day = document.createElement("p");
+        const p_image = document.createElement("img");
+        const p_temp = document.createElement("p");
 
-//         const desc = value.weather[0].description;
-//         const temp = value.main.temp;
+        // weather icon
+        const imagesrc = `https://openweathermap.org/img/w/${value.weather[0].icon}.png`;
 
-//         //GET THE DATE FROM THE API
-//         const currentDay = value.dt_txt.slice(0, 10);
+        const desc = value.weather[0].description;
+        const temp = value.main.temp.toString().slice(0, 4);
+        const currentDay = value.dt_txt.slice(0, 10);
 
-//         // CONVERTING THE STRING TO DATE OBJECT AND SET UTC TIME
-//         const currentDate = new Date(currentDay).toUTCString();
-//         // console.log(currentDate);
-//         // console.log(currentDay);
+        // date and day
+        const currentDate = new Date(currentDay).toUTCString();
+        console.log(currentDate);
+        console.log(currentDay);
 
-//         // PASSING THE DATE AND THE TEMPERATURE
-//         pDay.textContent = currentDate.slice(0, 3);
-//         ptemp.textContent = `${temp} °F`;
+        // add units 
+        p_day.textContent = currentDate.slice(0, 3);
+        // p_day.textContent = currentDate.slice(0, 7);
+        p_temp.textContent = `${temp} °F`;
+        p_day.classList.add("forecast-p");
+        p_temp.classList.add("forecast-p");
 
-//         // SET THE ICON'S ATTRIBUTES
-//         pIcon.setAttribute("alt", desc);
-//         pIcon.setAttribute("src", imagesrc);
+        p_image.setAttribute("src", imagesrc);
+        p_image.setAttribute("alt", desc);
 
-//         divForecast.appendChild(pDay);
-//         divForecast.appendChild(pIcon);
-//         divForecast.appendChild(ptemp);
-//         divForecast.classList.add("forecast-box");
+        div_forecast.appendChild(p_day);
+        div_forecast.appendChild(p_image);
+        div_forecast.appendChild(p_temp);
+        div_forecast.classList.add("forecast-day");
 
-//         forcastFlex.appendChild(divForecast);
-//       }
-//     });
-//   });
+        forcastContainer.appendChild(div_forecast);
+      }
+
+  });
+})
+
