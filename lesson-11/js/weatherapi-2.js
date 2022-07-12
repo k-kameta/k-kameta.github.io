@@ -4,21 +4,14 @@
 // Preston id= 56044730
 
 // let city = document.querySelector(".city").textContent;
+// let city = "Preston, Idaho";
+let city = document.getElementById('city').outerText;
+console.log("city = " + city);
 
-let city = "Preston";
-
-if (city == "Preston") {
-  const placeID = "5604473";
-} 
-else if (city == "Soda Springs") {
-  const placeID = "5607916";
-}
-else if (city == "Fish Haven") {
-  const placeID = "5585010";
-}
-
-const placeID = "5604473";
-console.log("place =" + placeID);
+if (city == "Preston, Idaho") {placeID = "5604473";}
+else if (city == "Soda Springs, Idaho") {placeID = "5607916";}
+else if (city == "Fish Haven, Idaho") {placeID = "5585010";}
+console.log("placeID = " + placeID);
 
 // const placeID = 5604473
 const apikey = "ef7f0ce0a44726e7d57c9356d2d75387"
@@ -31,12 +24,32 @@ fetch(apiURL)
     console.log('1 day data')
     console.log(jsObject);
 
-
+    document.getElementById('cover').textContent = jsObject.weather[0].description;
     document.getElementById('temp').textContent = jsObject.main.temp;
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('windSpeed').textContent = jsObject.wind.speed;
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    const desc = jsObject.weather[0].description;  // note how we reference the weather array
+    let imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+    let desc = jsObject.weather[0].description;  // note how we reference the weather array
 
+    //
+    // Wind speed to Wind chill conversion
+    //
+    temp = Number(jsObject.main.temp);
+    windSpeed = Number(jsObject.wind.speed);
+    
+    // check the values taken from html
+    console.log("wheather = " + desc);
+    console.log("temp = "+ temp); 
+    console.log("windSpeed = " + windSpeed);
+
+    var windChill = (35.74 + (0.6215 * temp))-(35.75 * Math.pow(windSpeed,0.16)) + (0.4275*temp*Math.pow(windSpeed,0.16));
+    // var windChill=(0.0817*(3.71*(Math.pow(windSpeed, 0.5))+5.81-0.25*windSpeed)*(temp-91.4)+91.4);
+
+    var windChill = Math.round(windChill);
+
+    document.getElementById("windChill").innerHTML = windChill;
+    console.log("windChill = " + windChill);
+ 
   });
 
   // =============

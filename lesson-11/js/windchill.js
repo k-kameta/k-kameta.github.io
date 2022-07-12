@@ -4,8 +4,11 @@
 
 var temp = document.getElementById('temp').outerText;
 var windSpeed = document.getElementById('windSpeed').outerText;
-// temp = Number(temp);
-// windSpeed = Number(windSpeed);
+console.log(temp); 
+console.log(windSpeed);
+
+temp = Number(temp);
+windSpeed = Number(windSpeed);
 
 // check the values taken from html
 console.log(temp); 

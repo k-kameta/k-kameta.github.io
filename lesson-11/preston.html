@@ -107,7 +107,7 @@
 <!-- CONTENT HERE -->
     <main class = "content">
         
-        <h2>Preston, Idaho</h2>
+        <h2 id="city">Preston, Idaho</h2>
         <div class="contentbox-summary">
             <!-- <h3>Hero w/ weather summary</h3> -->
     		    <picture>
@@ -136,11 +136,11 @@
                     <p class="stats-weather2">Wind Speed: </p>
                   </div>
                   <div class="value">
-                    <p class="stats-weather3"><span id="cover">Partly_cloudy</span></p>
-                    <p class="stats-weather3"><span id="temp">51</span> °F</p>
-                    <p class="stats-weather3"><span id="windChill"> N/A </span> °F</p>
-                    <p class="stats-weather3"><span id="humidity">62</span> %</p>
-                    <p class="stats-weather3"><span id="windSpeed">5</span> mps</p>
+                    <p class="stats-weather3"><span id="cover">retrieving</span></p>
+                    <p class="stats-weather3"><span id="temp">retrieving</span> °F</p>
+                    <p class="stats-weather3"><span id="windChill">calculating </span> °F</p>
+                    <p class="stats-weather3"><span id="humidity">retrieving</span> %</p>
+                    <p class="stats-weather3"><span id="windSpeed">retrieving</span> mps</p>
                   </div>
                 </div>
             </section>
@@ -210,8 +210,8 @@
     </footer>
     <script defer src="js/dates.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/weatherapi-2.js"></script>
+    <!-- <script src="js/windchill.js"></script> -->
     
     </body>
 </html>

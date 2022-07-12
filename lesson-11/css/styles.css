@@ -309,7 +309,7 @@ p.forecast-p {
   position: absolute;
   top: 40%;
   left: 4%;
-  width: 230px;
+  width: 260px; /* ★★★*/
  	/* background: radial-gradient(#eee, #6a8ac9); */
 	background: #4e85f1;
 	border: 1px solid #000;
@@ -328,8 +328,8 @@ p.forecast-p {
 .stats-weather-column {
   display: flex;
   /* display: grid; */
-  
   flex-direction: row;
+  width: auto;
 } 
 
 .stats-weather h3{
@@ -343,7 +343,15 @@ p.forecast-p {
 }
 .stats-weather3 {
   text-align: left;
+  width: 140px;
+}
 
+.value {
+  width: 140px;
+}
+
+span#cover {
+  width: 140px;
 }
 
 /* .stats-weather2 #cover {
