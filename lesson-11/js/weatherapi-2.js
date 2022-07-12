@@ -1,9 +1,26 @@
 // OpenWeatherMap API
 
 // units=metric(C), imperial(F), default (K=C+273.15)
-// Preston id= 5604473
+// Preston id= 56044730
 
-const placeID = 5604473
+// let city = document.querySelector(".city").textContent;
+
+let city = "Preston";
+
+if (city == "Preston") {
+  const placeID = "5604473";
+} 
+else if (city == "Soda Springs") {
+  const placeID = "5607916";
+}
+else if (city == "Fish Haven") {
+  const placeID = "5585010";
+}
+
+const placeID = "5604473";
+console.log("place =" + placeID);
+
+// const placeID = 5604473
 const apikey = "ef7f0ce0a44726e7d57c9356d2d75387"
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id="+placeID+"&APPID="+apikey+"&units=imperial";
 
@@ -25,9 +42,9 @@ fetch(apiURL)
   // =============
 
 
-const placeID2 = 5604473
+// const placeID2 = 5604473
 const apikey2 = "ef7f0ce0a44726e7d57c9356d2d75387"
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id="+placeID2+"&APPID="+apikey2+"&units=imperial";
+const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id="+placeID+"&APPID="+apikey2+"&units=imperial";
   
 fetch(apiURL2)
   .then((response) => response.json())
