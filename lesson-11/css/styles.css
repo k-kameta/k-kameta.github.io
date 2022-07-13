@@ -454,7 +454,7 @@ span#cover {
   /* margin-right: 5px;
   margin-left: 5px;
   max-width: 100%; */
-  box-shadow: 1px 1px 4px 1px #888;
+  box-shadow: 1px 1px 5px 1px #888;
   background-color: #795548;
   color: white;
   border-radius: 0px;
@@ -466,7 +466,9 @@ span#cover {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 8px;
-  padding: 3px;
+  padding: 4px;
+  border: 5px solid; 
+  border-color: white;
 }
 
 .EventInfo p {
@@ -485,6 +487,8 @@ span#cover {
   padding-right: 5px;
   text-align: center;
 }
+
+/* ================================== */
 
 
 @media screen and (max-width: 480px){ 

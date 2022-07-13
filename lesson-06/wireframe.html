@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="GS170 W05">
+<meta name="author" content="Kosei Kameta">
+
+<!-- This start file was build by Paul Cheney  -->
+<!-- <title>HTML5 Start Site by Paul Cheney</title> -->
+<!-- and modified by Kosei Kameta  -->
+<title>Weather Spot Reporter</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- FONT SET -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/style-menu.css">
+<link rel="stylesheet" href="css/style-sns.css">
+<link rel="stylesheet" href="css/flex.css">
+<link rel="stylesheet" href="css/towns.css">
+
+     
+</head>
+<!-- <body onload="Settoday(), Settown();"> -->
+<body onload="Settoday();">
+    <!-- <p class="display-message" style="display:none;">
+    <p class="display-message" style="display: block;">
+        Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </p> -->
+
+    <div id="Sun" style="display:none;">
+      <p class="display-message" style="display: block;">
+        <!-- test message on Sunday -->
+         It's Sunday. This is a test message for js check!
+      </p>
+    </div>
+    <div id="Mon" style="display:none;">
+      <p class="display-message" style="display: block;">
+        <!-- test message on Monday -->
+          It's Monday. This is a test message for checking purpose!
+      </p>
+    </div>
+    <div id="Tue" style="display:none;">
+        <p class="display-message" style="display: block;">
+        <!-- test message on Tuesday -->
+          It's Tuesday. This is a test message!
+        </p>
+    </div>
+    <div id="Wed" style="display:none;">
+        <p class="display-message" style="display: block;">
+        <!-- test message on Wednesday -->
+          It's Wednesday. This is a test message to check JS!
+        </p>
+    </div>
+    <div id="Thu" style="display:none;">
+        <p class="display-message" style="display: block;">
+        <!-- test message on Thursday -->
+          It's Thursday. This is just for test!
+      </p>
+    </div>
+    <div id="Fri" style="display:none;">
+        <p class="display-message" style="display: block;">
+        <!-- <p class="display-message"> -->
+           Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
+    <div id="Sat" style="display:none;">
+        <!-- test message on Saturday -->
+        <p class="display-message" style="display: block;">
+           It's Saturday. This is a test message!
+        </p>
+      </div>
+<!-- HEADER HERE -->
+	<header>
+        <img id="logo_img" src="assets/667368_celcius_clouds_farenheit_sunshine_temerature_icon.png" alt="weathersite-logo"> 
+        <!-- <div class="logo-box">logo will go here</div> -->
+
+        <h1>Weather Spot Reporter</h1>
+        <h2>Bring me anywhere you want to go</h2>
+  </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav>
+        <ul class="navigation">
+          <li><a href="#" class="ham">Menu</a></li>
+          <li><a id = "current_page" href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class = "content">
+        
+        <h2>Wireframe page - not yet completed <br>
+        <a href="index.html">Return to home page</a></h2>
+        <br>
+ 
+        Just taken from course instrucction. Will soon be updated. <br>
+        Font set will be changed to match the current design.<br>
+        <img id="img-wireframe" src="https://byui.instructure.com/courses/194438/files/87145010/preview" alt="medium view"> 
+        <img id="img-wireframe" src="https://byui.instructure.com/courses/194438/files/87145260/preview" alt="large view"> 
+        <br><br>
+        
+
+    </main>
+
+<!-- FOOTER HERE -->   
+    <footer>
+        <div>&copy;<span id="year"></span> | <a class="footer_link" href="../index.html">Kosei Kameta</a> | Tokyo | <a class="footer_link" href="https://www.byui.edu/online">BYU Online Learning</a></div> 
+        <div id="lastmod"> </div>
+        <div id="currentdate"> </div>
+        <br>
+        <h4 id=message-wireframe><a href="wireframe.html">Link to the wireframe (not yet completed)</a></h4>
+    </footer>
+    <script defer src="js/dates.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="js/windchill.js"></script> -->
+    <script src="js/towndata.js"></script>
+</body>
+</html>

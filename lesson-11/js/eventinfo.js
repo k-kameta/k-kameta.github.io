@@ -26,9 +26,9 @@ fetch(requestURL)
       if (towns[i].name == place) {
         let localEvent = document.createElement("div");
         let header = document.createElement("h3");
-        header.textContent = `${place} Area Events`;
+        header.textContent = `Upcoming Event in ${place}`;
         localEvent.appendChild(header);
-
+ 
         for (let j = 0; j < towns[i].events.length; j++) {
           let p = document.createElement("p");
           p.textContent = "- " + towns[i].events[j];
