@@ -450,7 +450,7 @@ span#cover {
 
 .EventInfo {
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 300px;
   /* margin-right: 5px;
   margin-left: 5px;
   max-width: 100%; */
@@ -605,7 +605,7 @@ span#cover {
       position: absolute;
       top: 40%;
       left: 10%;
-      width: 300px;
+      width: 310px;
 
        /* background: radial-gradient(#eee, #6a8ac9); */
       background: #4e85f1;
@@ -625,13 +625,16 @@ span#cover {
     
     .stats-weather3 {
       text-align: left;
-      width: 160px;
+      width: 170px;
     }
 
     .forecast-container {
       width: 70%;
     }
   
+    .value {
+      width: 170px;
+    }
 
   }
 
