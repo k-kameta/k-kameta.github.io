@@ -9,7 +9,6 @@ fetch(requestURL)
   .then(function (jsonObject) {
 
     const towns = jsonObject["towns"];
-    // const place = document.querySelector(".active").textContent;
     let place = "Preston" 
 
      console.log(jsonObject)
@@ -21,9 +20,9 @@ fetch(requestURL)
         header.textContent = `${place} Area Events`;
         localEvent.appendChild(header);
 
-        for (let x = 0; x < towns[i].events.length; x++) {
+        for (let j = 0; j < towns[i].events.length; j++) {
           let p = document.createElement("p");
-          p.textContent = towns[i].events[x];
+          p.textContent = towns[i].events[j];
           localEvent.appendChild(p);
           document.querySelector(".EventInfo").appendChild(localEvent);
         }
