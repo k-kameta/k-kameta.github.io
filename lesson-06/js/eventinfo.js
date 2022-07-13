@@ -16,10 +16,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-
     const towns = jsonObject["towns"];
-    // let place = "Preston" 
-
      console.log(jsonObject)
 
     for (let i = 0; i < towns.length; i++) {
