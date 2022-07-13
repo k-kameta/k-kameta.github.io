@@ -31,7 +31,7 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++ ) {
-            console.i; // checking i
+            // console.i; // checking i
             // (how would you do this with a foreach method?)
 
             if (towns[i].name == "Preston" ||

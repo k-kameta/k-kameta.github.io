@@ -17,7 +17,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject["towns"];
-     console.log(jsonObject)
+    // console.log(jsonObject)
 
     for (let i = 0; i < towns.length; i++) {
       if (towns[i].name == place) {
