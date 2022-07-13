@@ -151,6 +151,11 @@ section img {
 	margin: 0.7rem;
 }
 
+#message-wireframe {
+	margin-top: 10px;
+	margin-bottom: 8px;
+}
+
 #img-wireframe {
 	width: 50%;
 	margin-left: 50px;
