@@ -184,7 +184,7 @@ section img {
 
 	.towns towns_r {
 		display: flex;
-		flex: 1fr 1fr;
+		flex: 1;
 		margin-bottom: 18px;
 	}
 
@@ -223,7 +223,7 @@ section img {
 
 	.towns towns_r{
 		display: flex;
-		flex: 1fr 1fr;
+		flex: 1;
 		flex-direction: column;
 	}
 	
