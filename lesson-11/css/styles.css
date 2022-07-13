@@ -465,22 +465,24 @@ span#cover {
   align-items: center;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 5px;
-  padding: 1px;
+  margin-bottom: 8px;
+  padding: 3px;
 }
 
 .EventInfo p {
+  font-size: small;
+  color: yellow;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
 }
-.EventInfo p h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+.EventInfo h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: center;
 }
 

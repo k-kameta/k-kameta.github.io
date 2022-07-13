@@ -1,5 +1,14 @@
 // event information
 
+// let city = document.getElementById('city').outerText;
+city = document.getElementById('city').outerText;
+console.log("city = " + city);
+
+if (city == "Preston, Idaho") {place = "Preston";}
+else if (city == "Soda Springs, Idaho") {place = "Soda Springs";}
+else if (city == "Fish Haven, Idaho") {place = "Fish Haven";}
+console.log("place = " + place);
+
 const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 fetch(requestURL)
@@ -9,7 +18,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
 
     const towns = jsonObject["towns"];
-    let place = "Preston" 
+    // let place = "Preston" 
 
      console.log(jsonObject)
 
@@ -22,7 +31,7 @@ fetch(requestURL)
 
         for (let j = 0; j < towns[i].events.length; j++) {
           let p = document.createElement("p");
-          p.textContent = towns[i].events[j];
+          p.textContent = "- " + towns[i].events[j];
           localEvent.appendChild(p);
           document.querySelector(".EventInfo").appendChild(localEvent);
         }
