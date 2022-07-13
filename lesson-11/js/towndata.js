@@ -94,10 +94,10 @@ fetch(requestURL)
                 card.appendChild(div2);
                 document.querySelector('div.cards').appendChild(card);
 
-                }
+                // ====== event information ======
 
         }
-    });
+    }});
 
     // function Settown(){
     //     var towns = ["Soda Spring", "Preston", "Fish Haven"] ;
@@ -106,3 +106,5 @@ fetch(requestURL)
     //     // console.log(today);
     //     // console.log(weekday[today.getDay()]);
     // }
+
+  

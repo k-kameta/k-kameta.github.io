@@ -446,6 +446,45 @@ span#cover {
   }
 
 
+/* ==========event info ============ */
+
+.EventInfo {
+  margin: 0 auto;
+  max-width: 280px;
+  /* margin-right: 5px;
+  margin-left: 5px;
+  max-width: 100%; */
+  box-shadow: 1px 1px 4px 1px #888;
+  background-color: #795548;
+  color: white;
+  border-radius: 0px;
+  /* border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px; */
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 1px;
+}
+
+.EventInfo p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.EventInfo p h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 480px){ 
 /* @media only screen and (max-width: 32.5em){  */
 	.stats-weather {
@@ -576,6 +615,11 @@ span#cover {
     } 
     .stats-weather2 {
       width: 120px;
+    }
+    
+    .stats-weather3 {
+      text-align: left;
+      width: 160px;
     }
 
     .forecast-container {
