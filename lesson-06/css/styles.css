@@ -307,7 +307,7 @@ p.forecast-p {
 
 .stats-weather {
   position: absolute;
-  top: 40%;
+  top: 36%;
   left: 4%;
   width: 260px; /* ★★★*/
  	/* background: radial-gradient(#eee, #6a8ac9); */
@@ -603,7 +603,7 @@ span#cover {
 
     .stats-weather {
       position: absolute;
-      top: 40%;
+      top: 36%;
       left: 10%;
       width: 310px;
 
