@@ -422,6 +422,7 @@ span#cover {
 }                                                                                
 
 
+/* ==== Footer ==== */
 
 #footer_link {
     color: white;
@@ -442,8 +443,14 @@ span#cover {
   #credit {
     color: white;
     font-size: smaller;
-
+    padding-top: 8px;
+    padding-bottom: 5px;
   }
+
+footer div{
+  padding-top: 0px;
+  padding-bottom: 1px;
+}
 
 
 /* ==========event info ============ */
