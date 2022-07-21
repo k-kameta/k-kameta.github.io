@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="GS170 W02">
+<meta name="author" content="Kosei Kameta">
+
+<!-- This start file was build by Paul Cheney  -->
+<!-- <title>HTML5 Start Site by Paul Cheney</title> -->
+<!-- and modified by Kosei Kameta  -->
+<title>Soda Spring - Weather Spot Reporter</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- FONT SET -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/style-menu.css">
+<link rel="stylesheet" href="css/style-sns.css">
+<link rel="stylesheet" href="css/flex.css">
+
+   
+</head>
+
+<body>
+<!-- 
+<body onload="Settoday();">
+    <div id="Sun" style="display:none;">
+      <p class="display-message" style="display: block;">
+         It's Sunday. This is a test message for js check!
+      </p>
+    </div>
+    <div id="Mon" style="display:none;">
+      <p class="display-message" style="display: block;">
+          It's Monday. This is a test message for checking purpose!
+      </p>
+    </div>
+    <div id="Tue" style="display:none;">
+        <p class="display-message" style="display: block;">
+          It's Tuesday. This is a test message!
+        </p>
+    </div>
+    <div id="Wed" style="display:none;">
+        <p class="display-message" style="display: block;">
+          It's Wednesday. This is a test message to check JS!
+        </p>
+    </div>
+    <div id="Thu" style="display:none;">
+        <p class="display-message" style="display: block;">
+          It's Thursday. This is just for test!
+      </p>
+    </div>
+    <div id="Fri" style="display:none;">
+        <p class="display-message" style="display: block;">
+           Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
+    <div id="Sat" style="display:none;">
+        <p class="display-message" style="display: block;">
+           It's Saturday. This is a test message!
+        </p>
+      </div> -->
+
+<!-- HEADER HERE -->
+	<header>
+        <img id="logo_img" src="assets/667368_celcius_clouds_farenheit_sunshine_temerature_icon.png" alt="weathersite-logo"> 
+        <!-- <div class="logo-box">logo will go here</div> -->
+
+        <h1>Weather Spot Reporter</h1>
+        <!-- <h2>weatherspotreport.com</h2> -->
+        <h2>Bring me anywhere you want to go</h2>
+  </header>
+    
+    
+<!-- NAVIGATION HERE -->
+<nav>
+  <ul class="navigation">
+    <li><a href="#" class="ham">Menu</a></li>
+    <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Rental</a></li>
+      <li><a id = "current_page" href="soda_springs.html">Reservations</a></li>
+      <li><a href="gallery.html">Tours</a></li>
+      <li><a href="stormcenter.html">Contact</a></li>
+      <!-- <li><a href="stormcenter.html">Contact</a></li> -->
+      <!-- <li><a href="gallery.html">Gallery</a></li> -->
+    </ul>
+</nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class = "content">
+        
+        <h2 id="city">Soda Springs, Idaho</h2>
+        <div class="contentbox-summary">
+            <!-- <h3>Hero w/ weather summary</h3> -->
+    		    <picture>
+              <source media="(min-width: 640px)" srcset="images/soda-springs-gc4fef8b4b_640.jpg">
+              <source media="(min-width: 480px)" srcset="images/soda-springs-gc4fef8b4b_s400.jpg">
+              <img id="img-hello" src="images/soda-springs-gc4fef8b4b_s250.jpg" alt="Preston image">
+
+            </picture>
+            <section class="stats-weather">
+                <h3>Weather Summary</h3>
+                <hr>
+                <div class = stats-weather-column>
+                  <div class="lable">
+                    <p class="stats-weather2">Currently: </p>
+                    <p class="stats-weather2">Temperature: </p>
+                    <p class="stats-weather2">Wind Chill: </p>
+                    <p class="stats-weather2">Humidity: </p>
+                    <p class="stats-weather2">Wind Speed: </p>
+                  </div>
+                  <div class="value">
+                    <p class="stats-weather3"><span id="cover">Partly_cloudy</span></p>
+                    <p class="stats-weather3"><span id="temp">51</span> °F</p>
+                    <p class="stats-weather3"><span id="windChill"> N/A </span> °F</p>
+                    <p class="stats-weather3"><span id="humidity">62</span> %</p>
+                    <p class="stats-weather3"><span id="windSpeed">5</span> mps</p>
+                  </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="contentbox-5days">
+          <h2>5 Day Forecast</h2>
+          <div class="forecast-container"></div>
+        </div>
+ 
+        <!-- ★ -->
+        <div class="EventInfo">
+        </div>
+        <!-- ★ -->
+
+        <div class="contentbox-article">
+            <h3>Article - Natural springs of carbonated water</h3>
+            <!-- <hr> -->
+            <picture>
+                <img id="img-article" src="images/dreamstimesmall_147961978.jpg" alt="preston image">
+            </picture>
+           <p>
+            The city is named for the hundreds of natural springs of carbonated water that are located in and around the city. The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the middle 19th century. Today the city is also known as the location of the Soda Springs Geyser, which was unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing attraction. Instead they drilled into a chamber of highly pressurized carbon dioxide gas and cold water and the geyser was released. After running for weeks, and flooding the downtown area, it was capped and manually released when requested as a tourist attraction. Now it is let loose every hour on the hour by a timed release valve. Its height and volume have not decreased after many years. There are viewing platforms at either end of the travertine mound where the geyser erupts. Interpretive signs are located on the platforms explaining this phenomenon.
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Soda_Springs,_Idaho">(wikipedia)</a>
+            </p>
+        </div>
+  
+        <div class="contactbox">
+            <!-- <h3> Contact Information </h3> -->
+        
+            <div id="footer_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72630227475!2d-111.91543021532777!3d42.09980528561243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2z44Ki44Oh44Oq44Kr5ZCI6KGG5Zu9IOOAkjgzMjYzIOOCouOCpOODgOODm-W3niDjg5fjg6zjgrnjg4jjg7M!5e0!3m2!1sja!2sjp!4v1655958288325!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="address">
+                <!-- <p> -->
+                    <h3>Weather Spot Reporter</h3>
+                    Address:30N 1st E<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Preston ID 83263<br>
+                    phone: *** *** ****<br>
+                    email: weather_spot_rept@abc.com
+                <!-- </p> -->
+                <br>
+                <br>
+                <br>
+                <ul class="fas_sns_iconcolor">
+                    <li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="http://www.facebook.com/share.php?u=#" target="_blank" rel="nofollow"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="http://line.me/R/msg/text/?#" target="_blank" rel="nofollow"><i class="fab fa-line"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </main>
+
+<!-- FOOTER HERE -->   
+    <footer>
+        <div>&copy;<span id="year"></span> | <a class="footer_link" href="../index.html">Kosei Kameta</a> | Tokyo | <a class="footer_link" href="https://www.byui.edu/online">BYU Online Learning</a></div> 
+        <div id="lastmod"> </div>
+        <div id="currentdate"> </div>
+
+        <br>
+        <div id="credit">Weather data from <a id="footer_link" href="https://openweathermap.org/">Open Weather Map</a></div>
+
+    </footer>
+    <script defer src="js/dates.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/weatherapi-2.js"></script>
+    <script src="js/eventinfo.js"></script>
+    
+    </body>
+</html>
