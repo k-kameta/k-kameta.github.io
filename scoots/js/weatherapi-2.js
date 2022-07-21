@@ -13,6 +13,8 @@ else if (city == "Soda Springs, Idaho") {placeID = "5607916";}
 else if (city == "Fish Haven, Idaho") {placeID = "5585010";}
 console.log("placeID = " + placeID);
 
+placeID = ""
+
 // const placeID = 5604473
 const apikey = "ef7f0ce0a44726e7d57c9356d2d75387"
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id="+placeID+"&APPID="+apikey+"&units=imperial";
