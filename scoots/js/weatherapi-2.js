@@ -5,15 +5,16 @@
 
 // let city = document.querySelector(".city").textContent;
 // let city = "Preston, Idaho";
-let city = document.getElementById('city').outerText;
-console.log("city = " + city);
 
-if (city == "Preston, Idaho") {placeID = "5604473";}
-else if (city == "Soda Springs, Idaho") {placeID = "5607916";}
-else if (city == "Fish Haven, Idaho") {placeID = "5585010";}
-console.log("placeID = " + placeID);
+// let city = document.getElementById('city').outerText;
+// console.log("city = " + city);
 
-placeID = ""
+// if (city == "Preston, Idaho") {placeID = "5604473";}
+// else if (city == "Soda Springs, Idaho") {placeID = "5607916";}
+// else if (city == "Fish Haven, Idaho") {placeID = "5585010";}
+// console.log("placeID = " + placeID);
+
+let placeID = "3530103"
 
 // const placeID = 5604473
 const apikey = "ef7f0ce0a44726e7d57c9356d2d75387"
